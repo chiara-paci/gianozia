@@ -1,0 +1,38 @@
+---
+layout: page
+label: 60
+title: "Il pinguino alla ricerca del computer perduto"
+name: DscPinguinoIJPiccolini
+permalink: /page/DscPinguinoIJPiccolini
+has_toc: false
+created_by: chiara
+modified_by: chiara
+created: 2014-02-07 14:45:55.203669+01
+last_modified: 2014-05-08 09:18:44.878806+02
+---
+<p><a href="{{ "/page/DscPinguinoIJ"|relative_url }}">Inizio</a><h1>I piccolini</h1>
+Terminali, schede per esercitazioni, primi personal ... e i mitici AT&T 3b2. In pratica tutto ciò che sta su un tavolo.</p>
+<p><h2>AT&T 3b2/400 e AT&T 3b2/300</h2></p>
+<p>{% assign image_name="3b2.jpg" %}
+{% include image.html %}
+Gli AT&T 3b2 sono le prime macchine UNIX giunte al Dipartimento di Elettronica e Informatica dell'Università di Padova. La storia di queste macchine è piuttosto travagliata. All'inizio si tratta di 3b2/300, con 2MB di RAM e 70/100 MB di disco, a 32 bit. Con questi viene realizzata la prima rete locale del DEI, con protocollo 3BNET. Si tratta di una rete proprietaria non basata su TCP/IP, con tool simili a ftp, rcp, rsh. Successivamente vengono acquistati due 3b2/400 con dotazioni hardware simili. Sono usati tramite 6 terminali VT100 compatibili della IGS. La potenza di calcolo è strepitosa: ci si accorge di avere sbagliato il primo carattere della riga di comando solo dopo averne digitato almeno 50 alla cieca, grazie all'echo velocissimo: si lascia immaginare il primo impatto con vi o la compilazione . I nomi che hanno in questo periodo sono ancora ieeupda e ieeupdb (Ist. di Elettronica ed Elettrotecnica, Univ. di PaDova), poi modificati in deipd1, deipd2, deipd3... quando avviene il passaggio a Dipartimento. Nel corso del 1987 la situazione è la seguente:</p>
+<p><ul>
+<li>ieeupdb (deipd1). 3b2/400, 2M RAM, 72M hard disk, floppy da 5"1/4 (720K)</li>
+<li>deipd2. 3b2/400, 2M RAM, 72M hard disk, floppy da 5"1/4 (720K)</li>
+<li>deipd3. 3b2/300, 2M RAM, 30M hard disk, floppy da 5"1/4 (720K)</li>
+<li>deipd4. 3b2/300, 2M RAM, 30M hard disk, floppy da 5"1/4 (720K)</li>
+</ul>
+Nel corso degli anni successivi i 3b2/300, andati in disuso, vengono fusi tra loro, ottenendone uno con 140 MB di disco e 4MB di RAM, a nome deipd4, utilizzato per il BBS degli studenti. Queste furono anche le prime macchine su cui furono fatti esperimenti di connessione a Usenet e ad Internet. Le prime news al DEI vengono scaricate via modem a 1200 bps da Genova. Il 3b2/400, deipd2 diventerà poi patrizia. Continuerà ad essere usato fino al 1991.</p>
+<p><h2>Terminale AT&T 5625</h2></p>
+<p>{% assign image_name="t5625.jpg" %}
+{% include image.html %}
+E' un terminale intelligente con dentro in pratica un 3b2, il boot del software avviene via seriale e quindi è lento da non dire, circa 15 minuti. Ha uno splendido mouse semisferico rosso con tre tasti neri. Ha una circuiteria blitter per lo spostamento via hardware di porzioni di bitmap dello schermo. Violando le regole di buona programmazione, un burlone ai Bell Labs aveva creato CRABS, un programma che andava in giro a rovinare lo schermo altrui con dei granchietti che si mangiavano tutto.</p>
+<p><h2>DEC PDP-11</h2>
+<i>Università di Padova, D.E.I., Laboratorio di Informatica</i></p>
+<p>
+Il PDP-11 è stato uno dei computer di maggior successo di tutti i tempi. Comincia la sua carriera come minicomputer e finisce come micro o supermicro. E' stato costruito dal 1970 al 1990 e la sua eredità è stata raccolta dai VAX, tant'è vero che il primo VAX è talvolta chiamato PDP11-7xx invece che VAX11-7xx. La famiglia dei PDP-11 comprende vari modelli, i cui numeri non sono incrementali, ma sono assegnati secondo "oscuri" criteri dalla DEC. Computer della famiglia PDP-11 sono tuttora in uso e viene ancora prodotto software e moduli per questi modelli. E' molto ortogonale, con registri a 16 bit ed una marea di modalità di indirizzamento, con le quali si può prendere "il contenuto della locazione puntata dalla locazione all'indirizzo R0" e spostarlo "nella locazione puntata dalla locazione all'indirizzo R1" con una sola istruzione (mov @(r0), @(r1)). Ha una tastiera esadecimale con la quale si può programmare la macchina a colpi di codici esadecimali, ma ha anche a bordo un buon assemblatore simbolico. Tutto quello che serve per poter compilare un programma con forward references su questa macchina è uno script che invia due volte il sorgente sulla seriale connessa alla scheda. Il piu` bel pezzo di codice del PDP11 è comunque mov -(PC), -(PC), l'IMP di Core Wars. Il PDP-11 qui al DEI è stato usato per le esercitazioni di calcolatori elettronici prima dell'arrivo delle schede Flight 68000. L'ultimo anno che sono stati in servizio un buontempone ha scaricato su tutte le schede un programmino che, usando i led a sette segmenti, augurava Buon Natale e Buon Anno con un messaggio ciclico.</p>
+<p><h2>Lemon II</h2>
+{% assign image_name="lemonII.jpg" %}
+{% include image.html %}
+Clone dell'Apple II, in tutto identico all'originale, di produzione italiana (ne esisteva anche uno chiamato Orange II, di produzione olandese). L'Apple II è il primo personal computer. Realizzato nel gennaio del 1983, è basato su un processore 6502 da 1.02 Mhz. Può avere da 4kB a 64kB di memoria RAM e 64K e 64KROM, di cui 32K dedicati al BASIC. Il suo costo originario era di $1395 ed stato prodotto fino al 1993 ed è quindi l'unico Apple ad aver superato i dieci anni di produzione. Il monitor è in bianco e nero o a colori. In modo testo mostra 24 linee da 40 caratteri, ma può funzionare anche in modalità grafica. Per registrare i dati utilizza nastri o dischi. All'Apple II possono essere collegati schede e dispositivi vari: schede grafiche e sonore, stampanti con interfaccia seriale o parallela, tavolette grafiche.</p>
+<p></p>

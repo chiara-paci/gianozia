@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.name }}: {{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+
+    <aside>
+      {% include navigation.html %}
+
+      <table>
+	{% for p in page.scheda %}
+	<tr><th>{{ p.key }}</th><td>{{ p.value }}</td></tr>
+	{% endfor %}
+      </table>
+
+      <p>{% if page.has_toc %}Table of contents{% endif %}</p>
+
+      <nav>
+      {% for m in page.menus %}
+      {% assign dmenu=site.data.menus[m] %}
+      {% for ch in dmenu.children %}
+      {% assign menu=site.data.menus[ch] %}
+      {% include menu.html %}
+      {% endfor %}
+      {% assign menu=dmenu %}
+      {% include menu.html %}
+      {% endfor %}
+      </nav>
+    </aside>
+
+    <article>
+    {{ content }}
+    </article>
+  </body>
+</html>

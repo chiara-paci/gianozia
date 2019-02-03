@@ -1,0 +1,15 @@
+---
+title: Images
+layout: default
+---
+
+{% for k in site.data.images %}
+
+{% assign img=k[1] %}
+
+<figure>
+<img src="{{ img.path|relative_url }}" alt="{{ img.alternate }}"/>
+<figcaption>[{{ img.label }}-{{ img.name }}] {{ img.description }}</figcaption>
+</figure>
+
+{% endfor %}

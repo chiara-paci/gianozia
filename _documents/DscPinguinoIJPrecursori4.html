@@ -1,0 +1,97 @@
+---
+layout: page
+label: 64
+title: "Il Pinguino alla ricerca del computer perduto"
+name: DscPinguinoIJPrecursori4
+permalink: /page/DscPinguinoIJPrecursori4
+has_toc: false
+created_by: chiara
+modified_by: chiara
+created: 2014-02-07 14:45:55.259078+01
+last_modified: 2014-05-08 09:18:44.923328+02
+---
+<p><h1>Il dopoguerra</h1><h2>ENIAC, Electronic Numerator, Integrator, Analyzer, and Computer (and Calculator)</h2>
+<i>Novembre 1945, John W. Mauchl (1907-80), J. Presper Eckert (1919-) e il loro team della Moore School of Electrical Engineering, University of Pennsylvania, Philadelphia</i></p>
+<p>{% assign image_name="eniac1548.gif" %}
+{% include image.html %}</p>
+<p>E' un progetto segreto degli US Army's Ballistics Research Lab. Assomiglia ll'Harvard Mark I, ma ha componenti interamente elettronici, con 17468 tubi a vuoto. La macchina pesa 30 tonnelate, è di circa 1000 metri quadrati e consuma 130/140 kW di elettricità.</p>
+<p>La macchina comprende 20 accumulatori (il progetto originale ne prevedeva 4). Accumulatori e altre unità sono connessi da alcuni data bus e da un insieme di "program line" per la sincronizzazione. Ciascun accumulatore contiene un numero a 10 cifre, con 10 bit per ogni cifra e comprende la circuiteria per aggiungere un numero proveniente dal bus a quello immagazzinato e per trasmettere sul bus il numero o la sua versione complementare.</p>
+<p>Ci sono unità separate per le moltiplicazioni (3 msec), le divisioni e le radici quadrate, con I/O sui bus. Ci sono, come nell'Harvard Mark I, 104 registri costanti a 12 cifre (function table). !00 sono direttamente indirizzabili tramite un numero a due cifre dal bus e gli altri 4 sono utilizzati per interpolazioni. Per inserire i dati c'è un lettore di schede e un perforatore per fornire l'output.</p>
+<p>Il programma è impostato con un pannello di spine e cavi: uno stesso programma, difatti, può girare per settimane intere. Le program line sono sotto il controllo di un'unità master, che può fare iterazioni. La velocità di clock è di 100kHz.</p>
+<p>Mauchly e Eckert chiedono il brevetto, ma l'università lo contesta. Alla fine viene concesso nel 1964, ma tolto nel 1973, in parte a causa dei lavori di Atanasoff.</p>
+<p>L'Eniac era progettato per calcolare tavole per gli artiglieri. Ma non fu pronto che a guerra finita e il suo costo superò del 225% il budget previsto.
+{% assign image_name="eniac1563.gif" %}
+{% include image.html %}</p>
+<p>
+{% assign image_name="eniac4023.gif" %}
+{% include image.html %}</p>
+<p>Nel febbraio del 1946 l'ENIAC è mostrato al pubblico. Un pannello di luci è aggiunto per aiutare a capire quanto la macchina sia veloce e cosa stia facendo (e Hollywood prende nota).</p>
+<p>Nel settembre 1948 l'ENIAC fu migliorato da un'idea di Richard F. Clipper (BRL) e di Nicholas Metropolis (Los Alamos). Ogni program line viene collegata permanentemente per una diversa operazione e una nuova unità converter abilita i programmi ad accedervi. I programmi possono così essere inseriti tramite una functoin table.</p>
+<p>La memoria resta comunque read-only, ma la programmazione richiede qualche ora, invece che alcuni giorni.</p>
+<p><h2>Harvard Mark II</h2>
+<i>Luglio 1947, Aiken e il suo team</i></p>
+<p>
+Un grande calcolatore programmabile che usa relay per i 50 registri floating-point e per l'unità aritmetica, 13000 in tutto. Nel settembre 1947 una farfalla ebbe la brutta idea di volare dentro l'Harvard Mark II. Il logbook fu annotato con la frase "first actual case of bug being found" e ciò che restava della farfalla. (Il termine, e il concetto, di bug esistevano già). La predizione di Aikeen è che gli USA avranno bisogno di un totale di 6 computer elettronici digitali.</p>
+<p><h2>SSEC ("Selective Sequence Electronic Calculator")</h2>
+<i>Gennaio 1948, Wallace Eckert (1902-1971) e il suo team, IBM</i></p>
+<p>
+{% assign image_name="ssec.gif" %}
+{% include image.html %}
+E' un ibrido tecnologico: 8 tubi a vuoto per i registri, 150 parole di memoria a relay e 66 anelli di nastro di carta per un totale di 20000 parole da 20 cifre in registri BCD.</p>
+<p>La macchina può spostarsi da un nastro all'altro e usa anche pannello di spine nella sua programmazione (come l'Harvard Mark I). Ma può anche mettere le istruzioni in memoria e leggerle da quella: da un certo punto di vista si tratta quindi del primo computer vero e proprio.</p>
+<p><h2>IBM 604</h2>
+<i>Autunno 1948, IBM</i></p>
+<p>
+E' un calcolatore programmabile che usa tubi a vuoto. Può leggere e scrivere su schede perforate (anche sulla stessa) e compie fino a 60 operazioni aritmetiche in 80 msec. E' programmata tramite pannello di spine.</p>
+<p><h2>Whirlwind</h2>
+<i>1949-51, Jay W. Forrester e il suo team, MIT</i></p>
+<p>
+Costruito per l'US Navy's Office of Research and Inventions. La forma originale ha 3300 tubi e 8900 diodi di cristallo. Ocuppa 2500 piedi quadrati. Ha una memoria a CRT di 2048 parole da 16 bit, che consuma fino a 32000$ ogni mese.</p>
+<p>C'è anche un device di I/O grafico, costituito da un CRT che può mostrare un pixel alla volta e una penna ottica, per poter utilizzare questo dispositivo per il controllo del traffico aereo.</p>
+<p>E' il primo computer progettato per lavorare real-time: può eseguire 500000 addizioni o 50000 moltiplicazioni al secondo.</p>
+<p><h2>(Manchester) Mark I</h2>
+<i>Giugno 1948, Newman, Freddie C. Williams, e il loro team alla Manchester University, Manchester, England</i></p>
+<p>
+{% assign image_name="Madam.gif" %}
+{% include image.html %}</p>
+<p>Questa è la prima macchina che è veramente un computer, perché è la prima ad avere una reale capacità di mettere in memoria in programmi.</p>
+<p>Forse su suggerimento di Presper Eckert, Williams sviluppa un nuovo tipo di memoria, che usa la carica residua rimasta sullo schermo di un tubo a raggi catodici dopo il passaggio fascio elettronico: un bit è letto, con un altro fascio inviato attraverso lo schermo, misurando il voltaggio di un elettrodo oltre lo schermo. E' poco fattibile, ma veloce e anche relativamente economica, poiché può usare la tecnologia, già esistente, dei CRT, oltre che molto più compatta di ogni altro tipo di memoria esistente all'epoca. La memoria principale del Mark I è di 32 parole di 32 bit e occupa un singolo tubo di Williams.</p>
+<p>I programmi erano inizialmente inseriti in binario sulla tastiera e l'output letto, sempre in binario, da un altro CRT. Più avanti, Turing raggiunse il gruppo e sviluppò una primitiva forma di linguaggio assembly, uno dei tanti sviluppati più o meno nello stesso periodo in differenti posti.</p>
+<p>Nell'aprile 1949 la memoria principale sarà portata a 128 parole da 40 bit (su due CRT) e sarà aggiunta una memoria secondaria magnetica per 1024 parole. Verranno anche messi due registri index.</p>
+<p>Nel febbraio 1951 il Mark I diventa una macchina commerciale, conosciuta anche come "Manchester Mark II", "MUDC", "MUEDC", o "MADAM" (è sempre la stessa). Ha 256 parole da 40 bit di memoria principale e 8 registri index. Furono vendute 8 macchine come questa.</p>
+<p><h2>EDSAC ("Electronic Delay Storage Automatic Computer")</h2>
+<i>Maggio 1949, Maurice Wilkes (1913-) e il suo team, Cambridge University</i></p>
+<p>
+{% assign image_name="edvac1.gif" %}
+{% include image.html %}
+E' basato sul progetto dell'EDVAC (quello della foto) ed è supportato finanziariamente e tramite personale tecnico dalla J. Lyons & Co. Ltd., una grande società inglese di ristorazione. E' l'ultimo candidato al titolo di primo computer.</p>
+<p>La memoria è a "ultrasonic delay line". Inventata originariamente da William Shockley, dei Bell Labs, e Presper Eckert, è costruita in una versione migliorata in collegamento con i sistemi radar. Lavora convertendo ripetutamente impulsi elettrici in impulsi di ultrasuoni, tipicamente inviati attraverso una vaschetta di mercurio. Dall'altra parte gli impulsi sono convertiti in forma elettrica. La memoria deve essere mantenuta ad una certa temperatura e solo i pochi bit in forma elettrica sono accessibili. Nell'EDSAC 16 vaschette di mercurio danno un totale di 256 parole a 35 bit (o 512 a 17 bit). La velocità del clock è di 500kHz; molte istruzioni prendono circa 1500 ms per essere eseguite. L'I/O è tramite nastro di carta. Un insieme di registri costanti serve per il boot. E' supportato il concetto di procedura relocabile.</p>
+<p>Nell'autunno del 1951 T. Raymond Thompson, John Simmons e il loro team completano il LEO I (Lyons Electronic Office I), sul progetto dell'EDSAC. La memoria a ultrasuoni è 4 volte più grande e supera la dipendenza dalla temperatura utilizzando una linea di ritardo come master e sincronizzando con questa, anziché con un clock, tutte le altre. Il LEO I è il primo computer usato per calcoli commerciali.</p>
+<p><h2>BINAC ("Binary Automatic Computer")</h2>
+<i>Agosto 1949, Presper Eckert e Mauchly</i></p>
+<p>
+Costruito per la US Air Force. Ha due processori (ridondanti) ciascuno con 700 tubi e 512 parole da 31 bit di memoria. Ciascun processore occupa solo 4 piedi quadrati e può fare 3500 addizioni o 1000 moltiplicazioni al secondo.</p>
+<p><h2>Harvard Mark III</h2>
+<i>Settembre 1949, Aiken e il suo team</i></p>
+<p>
+Ha memorie magnetiche separate per dati e istruzioni. Solo una parte della memoria dati può essere indirizzata dalla CPU, il resto è usato come memoria secondaria. La capacità della memoria è di 4000 istruzioni, 350 parole da 16 bit nella memoria principale e più di 4000 in quella secondaria. La macchina è formata da 5000 tubi a vuoto e 2000 relay.</p>
+<p><h2>Pilot ACE (progetto pilota per un "Automatic Computing Engine")</h2>
+<i>Maggio 1950, National Physical Laboratory, Teddington, England <i></p>
+<p>
+E' stato progettata in buona parte da Turing nel 1945-47. La memoria principale di questo computer è costituita da 200 linee di ritardo a ultrasuoni separate, con una migliore indirizzabilità delle altre macchine ad ultrasuoni. C'è un gruppo addizionale di linee di ritardo corte, usate come registri, ciascuno dei quali effettua una particolare operazione sul numero che riceve. Molte operazioni consistono così semplicemente nel far muover un numero da una linea di ritardo all'altra. Per l'I/O si usano schede perforate.</p>
+<p>Un successore di questa macchina sarà chiamato DEUCE.</p>
+<p><h2>SEAC (Standards Eastern Automatic Computer)</h2>
+<i>Maggio 1950, US National Bureau of Standards, Washington <i></p>
+<p>
+Completato in breve tempo perché non si poteva aspettare che fosse disponibile un computer commerciale, il progetto del SEAC è semplificato proprio per la rapida implementazione. Per ridurre il numero di tubi a vuoti, sono usati 12000 dei nuovi diodi al germanio. Le linee di ritardo ad ultrasuoni contengono 512 parole a 45 bit.</p>
+<p><h2>SWAC (Standards Western Automatic Computer)</h2>
+<i>Luglio 1950, Los Angeles</i></p>
+<p>
+Qundo viene completato, è il computer più veloce del mondo. Usa memorie con tubi di Williams e problemi tecnici limitano l'operatività della memoria a sole 256 parole da 37 bit. Ma compie un'addizione in 64 microsecondi.</p>
+<p><h2>UNIVAC</h2>
+<i>Marzo 1951, Presper Eckert e Mauchly</i></p>
+<p>
+{% assign image_name="univac.gif" %}
+{% include image.html %}
+E' il primo computer commerciale degli USA. Ha una memoria con linee di ritardo a ultrasuoni, con 1000 parole di 12 cifre. Può fare 8333 addizioni o 555 moltiplicazioni al secondo. Contiene 5000 tubi e occupa 200 piedi quadrati. Come memoria secondaria usa nastri magnetici di bronzo ricoperto di nickel, larghi mezzo pollice e contenenti 128 caratteri per pollice.</p>
+<p></p>

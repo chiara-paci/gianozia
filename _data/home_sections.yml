@@ -1,0 +1,28 @@
+- label: a
+  blocks:
+    - title: ab
+      valid: true
+      image_url: xx
+      image_alt: xx
+      page_url: yy
+      page_text: zz zzkajljssa
+    - title: cd
+      valid: true
+      image_url: xx
+      image_alt: xx
+      page_url: yy
+      page_text: zz zzkajljssa
+- label: q
+  blocks:
+    - title: qab
+      valid: true
+      image_url: xx
+      image_alt: xx
+      page_url: yy
+      page_text: zz zzkajljssa
+    - title: qcd
+      valid: true
+      image_url: xx
+      image_alt: xx
+      page_url: yy
+      page_text: zz zzkajljssa

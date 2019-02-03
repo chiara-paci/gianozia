@@ -1,0 +1,129 @@
+---
+layout: page
+label: 6
+title: "Il pre-tutorial di Emacs"
+name: DEIEmacsTutorial
+permalink: /page/DEIEmacsTutorial
+has_toc: false
+created_by: chiara
+modified_by: chiara
+created: 2014-02-07 14:45:54.095357+01
+last_modified: 2014-05-08 09:18:44.279795+02
+---
+<p>Questo  documento è  inteso come  completamento del  tutorial di Emacs.
+Ad un certo punto vi verrà indicato di leggere il tutorial di Emacs, fatelo prima di continuare nella lettura di questo documento.</p>
+<p>La prima cosa che  si nota usando Emacs è che usa  la tastiera in modo <i>strano</i>. In realtà Emacs è un programma che si avvicina ai 30 anni di età ed è  stato scritto ben prima che  venisse pensato il <i>famigerato</i> standard CUA.</p>
+<p>
+Da quando è stato integrato con X11 (primi anni '90) il programma è stato dotato di un menù (anche questo non molto standard) che può essere utile come promemoria in quanto presenta la corrispondente combinazione di tasti qualora questa sia definita.</p>
+<p>Ultimamente è stata aggiunta una toolbar che non tutti trovano utile ed anzi fanno scomparire per guadagnare spazio sullo schermo. Anche il menu e le scrollbar possono essere nascoste!</p>
+<p>(Nota:  con  la  versione  22  un  comportamento  conforme  al  CUA  è facilmente ottenibile con una voce del menu 'Options').</p>
+<p>Il programma, tra le varie voci del menu 'Help' presenta la possibilità di accedere ad un tutorial che permette di familiarizzare con i comandi di Emacs.</p>
+<p>Il tutorial è molto chiaro sui comandi, cita i riferimenti mnemonici (mnemonici in inglese, ovviamente) da dare per muoversi dentro Emacs ma dimentica di dire esplicitamente come i comandi sono organizzati.</p>
+<p>Emacs è  stato uno  dei primi  editor <i>in tempo  reale</i>, nei quali si vedono le modifiche al testo nel momento in cui le si applicano durante l'inserimento del testo: vi ad esempio (per citare un altro grande editor) mantiene la suddivisione in uno stato di inserimento del testo ed uno di input dei comandi di editing.</p>
+<p>
+Il modo che ha Emacs per distinguere tra pressioni di tasti che determinano l'inserimento e quelle che sono comandi di editing Emacs usa due <i>shift</i> particolari, il tasto Control ed il tasto Meta, che sui PC odierni viene mappato sul tasto Alt o su uno dei tasti bandierina.</p>
+<p>
+E su questo punto il tutorial è molto molto chiaro.</p>
+<p>Quello che invece non dice chiaramente è che in 30 anni di sviluppo i comandi sono stati associati alla tastiera in modo che quelli più comuni siano i più rapidamente raggiungibili, e man mano che il comando diventa di uso più raro aumentano le operazioni da fare per attivarlo. Avremo quindi:</p>
+<p><ul>
+<li>I comandi che si attivano con l'uso di Control, Meta o ambedue contemoraneamente. Usualmente i comandi che si attivano con Control hanno effetto su un solo carattere, quelli che si attivano con Meta hanno effetto su una parola e quelli che si attivano con ambedue su definizioni di funzioni o paragrafi.</li>
+<li>I comandi che usano il prefisso Control X (extended)</li>
+<li>I comandi che usano il prefisso Control C (command), in questa fascia sono riservati all'utente i comandi Control C seguiti da una lettera dell'alfabeto.</li>
+<li>I comandi invocati per nome: i comandi in Emacs sono funzioni in LISP richiamabili in modo interattivo. Si usa il comando Meta X per indicare a Emacs che si vuole dare un comando e poi se ne scrive il nome.</li>
+</ul>
+Bene, fatta  questa premessa,  che permette di <i>mettere in  ordine</i> i comandi, passiamo al tutorial.</p>
+<p>
+Il metodo brutale  è usare il menu 'Help' e  scegliere il Tutorial (in inglese o nel linguaggio preferito).</p>
+<p>Un'altro metodo per avviare il tutorial con il linguaggio preferito è premere Meta X e poi scrivere "help-with-tutorial-spec-language" (premendo spazio si attiverà sia il completamento che l'inserimento del carattere -). Vi verrà chiesto il linguaggio nel quale volete il tutorial.</p>
+<p><b>E' ora di leggersi il tutorial!</b>. Non è obbligatorio fare tutte le prove che vi dicono di fare nel tutorial, l'importante è che impariate i comandi!</p>
+<p>
+B-)</p>
+<p>Bene, avete letto il tutorial, avete visto i comandi dati per nome e sopratutto avete visto i comandi C-h k, C-h f e C-h v che permettono di accedere alla documentazione dell'assegnazione di una sequenza di tasti, di un comando dato per nome o di una variabile.</p>
+<p>VARIABILE ????? Variabile! Non ho detto che i comandi di Emacs sono funzioni LISP? LISP è un linguaggio di programmazione ed ovviamente ha le variabili :) .</p>
+<p>No, non occorre sapere il LISP per usare Emacs. Può però essere utile imparare a balbettare il LISP per comprendere meglio il file di configurazione e imparare a far fare a Emacs le cose ripetitive.</p>
+<p>Primo passo, le macro.</p>
+<p>Date questa sequenza di comandi:</p>
+<p><pre></p>
+<p>C-x 2
+C-x o
+C-x b  </pre></p>
+<p>scrivete "*scratch*" al prompt (senza doppi apici)</p>
+<p>Ora giocate un po' con le macro. Quando vi siete stancati date i comandi</p>
+<p><pre></p>
+<p>C-x o
+C-x 1  </pre></p>
+<p>Provate ora a dare il comando</p>
+<p><pre></p>
+<p>C-h k
+C-x e  </pre></p>
+<p>e leggete la documentazione che verrà visualizzata. Scoprirete che potrete dare un nome alle macro per averne più di una definita. Potrebbe essere utile leggervi la documentazione anche di altri comandi, ma per il nostro esempio ci limiteremo a quella di C-x e. Prendiamo le prime 4 righe:</p>
+<p><pre></p>
+<p>C-x e
+runs the command kmacro-end-and-call-macro which  is an interactive compiled Lisp function in `kmacro.el'.
+It is bound to C-x e.
+(kmacro-end-and-call-macro ARG &optional NO-REPEAT)  </pre></p>
+<p>La prima cosa che  ci viene detta è che C-x e  esegue un comando. A questo punto devo confessarvi una cosa: OGNI pressione di un tasto in Emacs esegue un comando, alla peggio self-insert-command che inserisce nel testo il tasto appena premuto; ebbene sì, Emacs in pratica è sempre e solo in modo comandi :) :) :) :) :)</p>
+<p>Lasciando da parte gli scherzi, ci viene detto che il comando è una funzione LISP, ci viene detto in che file è definita (se i sorgenti LISP sono al loro posto potete andarli a vedere seguendo il link) a che tasto è legata e quale è la sua sintassi.</p>
+<p>BINGO!</p>
+<p>Se la pressione di ogni tasto esegue una funzione LISP allora è possibile tradurre una sequenza di tasti in una funzione e richiamare quella ogni volta che lo vogliamo, salvare la funzione in un file e conservarla...</p>
+<p>Un'altra cosa che si può fare è questa. Avete una montagna di file su cui dovete fare la stessa modifica, ad esempio sostituire PINCO con PANCO.</p>
+<p>A parole, le operazioni per modificare un file sono:</p>
+<p><ul>
+<li>Carico il file</li>
+<li>Sostituisco PINCO con PANCO</li>
+<li>Salvo il file</li>
+<li>Elimino il buffer per liberare memoria (il file non mi serve più)</li>
+</ul>
+In sequenze di tasti</p>
+<p><pre></p>
+<p>C-x f nomefile
+M-x replace-string PINCO PANCO (emacs chiede prima cosa rimpiazzare e poi il sostituto)
+C-x s
+C-x k RETURN (va bene il buffer suggerito da Emacs, quello corrente) </pre></p>
+<p>E andando a guardare i vari comandi e leggendoci le documentazioni fornite abbiamo questa traduzione in invocazioni di funzioni LISP:</p>
+<p><pre></p>
+<p>(find-file "nomefile")
+;; Questo lo insegnano nella documentazione di replace-string
+(while (search-forward "PINCO" nil t)
+(replace-match "PANCO"))
+(save-buffer) </pre></p>
+<p>Rimane l'ultimo. La funzione che ci serve, kill-buffer, si aspetta un buffer come parametro, richiamata interattivamente dall'utente permette di selezionare uno dei buffer presenti. Ma per i nostri usi sarebbe meglio usare un qualcosa che non richieda l'intervento dell'utente, se troviamo il modo di passare a kill-buffer il buffer corrente come oggetto LISP siamo a cavallo.</p>
+<p>Facendo una ricerca con l'apropos interno (C-h a) e indicando richiedendo current buffer (buffer corrente) Emacs risponde con una sbrodolata di funzioni e cercando con pazienza si trova la funzione current-buffer che ritorna il buffer corrente come oggetto LISP, quello che ci serve: (kill-buffer (current-buffer))</p>
+<p>Nota: non  tutti sono avvezzi  alla sintassi del  LISP, questo sito può aiutarvi: http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-1.html.</p>
+<p>Riscriviamo ora le invocazioni delle funzioni insieme a ciò che serve a trasformare il tutto in una funzione</p>
+<p><pre></p>
+<p>(defun da-pinco-a-panco (file)
+;; Vogliamo poterla richiamare dall'interno di emacs
+;; Portatevi sulla parola interactive e premete C-h f per
+;; vedere a cosa serve e come funziona
+(interactive "fFile da correggere:")
+;; file non è più una costante, ma un parametro che passiamo
+;; alla funzione
+(find-file file)
+;; Questo lo insegnano nella documentazione di replace-string
+(while (search-forward "PINCO" nil t)
+(replace-match "PANCO"))
+(save-buffer)
+(kill-buffer (current-buffer)))</pre></p>
+<p>Possiamo usarla interattivamente con</p>
+<p><pre></p>
+<p>M-x da-pinco-a-panco </pre></p>
+<p>oppure <i>da programma</i> con</p>
+<p>
+<pre></p>
+<p>(da-pinco-a-panco "nomefile") </pre></p>
+<p>Bene, ora abbiamo una funzione che fa il nostro lavoro per UN SOLO FILE. A che ci serve ? Beh, Emacs è grande e grosso, ed è anche un server. :)</p>
+<p>C'è un programma chiamato emacsclient (per versioni di Emacs anteriori alla 22 occorre procurarsi gnuclient e gnudoit) che serve ad usare Emacs come server di editing, carica temporaneamente un file, ve lo fa editare e poi quando date il comando C-x # (ovvero server-edit) lo fa sparire dopo avervi eventualmente chiesto di salvare le modifiche.</p>
+<p>E che c'entra ?</p>
+<p>Il programma ha una opzione che si chiama --eval e che richiede a Emacs di interpretare una espressione LISP (oppure lo fa il programma gnudoit). Date il comando M-x server-start (gnuserver-start con gnuclient) e provate a dare da shell</p>
+<p><pre></p>
+<p>$ emacsclient --eval '( + 1 1 )' </pre></p>
+<p>oppure</p>
+<p><pre></p>
+<p>$ gnudoit '( + 1 1)'</pre></p>
+<p>vi verrà risposto 2. Che c'entra col nostro problema di correggere tutti i file che contengono PINCO e sostituendo la parola con PANCO? Beh, ad esempio lo shell script</p>
+<p><pre></p>
+<p>$ find $PWD -exec grep -q PINCO {} \; \
+> -exec emacsclient --eval '( da-pinco-a-panco "{}")' \;</pre></p>
+<p>cerca tutti i file che contengono la parola PINCO e chiama la nostra funzione per ognuno di essi... Emacs e la shell hanno fatto da soli il lavoro meccanico e noioso ;-) .</p>
+<p></p>

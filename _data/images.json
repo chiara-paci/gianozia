@@ -1,0 +1,604 @@
+{
+	"Arabic_speaking_world.png": {
+		"label": "2",
+		"name": "Arabic_speaking_world.png",
+		"description": "Paesi dove l'arabo è una lingua ufficiale (verde) o nazionale (blu) (da Wikipedia)",
+		"alternate": "Arabic_speaking_world.png",
+		"path": "/contents/images/Arabic_speaking_world.png"
+	},
+	"Madam.gif": {
+		"label": "4",
+		"name": "Madam.gif",
+		"description": "(Manchester) Mark I",
+		"alternate": "Madam.gif",
+		"path": "/contents/images/Madam.gif"
+	},
+	"Nova840.jpg": {
+		"label": "6",
+		"name": "Nova840.jpg",
+		"description": "<Nova",
+		"alternate": "Nova840.jpg",
+		"path": "/contents/images/Nova840.jpg"
+	},
+	"amman.almagro2-460.png": {
+		"label": "7",
+		"name": "amman.almagro2-460.png",
+		"description": "Amman, acropoli. Pianta. Rielaborazione da <b>WARNING</b>: No such module MYARTICOLO! , pag. 460.",
+		"alternate": "amman.almagro2-460.png",
+		"path": "/contents/images/amman.almagro2-460.png"
+	},
+	"amman.eea-Image03.png": {
+		"label": "8",
+		"name": "amman.eea-Image03.png",
+		"description": "Amman, acropoli. Vista. La foto originale viene da <a href='http://www.eea.csic.es/Alcazar/pages/image03.htm'>El Alcázar Omeya de Ammán</a>.",
+		"alternate": "amman.eea-Image03.png",
+		"path": "/contents/images/amman.eea-Image03.png"
+	},
+	"aqaba.NN_Spr94_fig3.gif": {
+		"label": "9",
+		"name": "aqaba.NN_Spr94_fig3.gif",
+		"description": "Aqaba, VII secolo. Pianta. Da <a href='http://oi.uchicago.edu/research/projects/aqa/'>The Aqaba Project</a> (The Oriental Institute of The University of Chicago).",
+		"alternate": "aqaba.NN_Spr94_fig3.gif",
+		"path": "/contents/images/aqaba.NN_Spr94_fig3.gif"
+	},
+	"archepen.gif": {
+		"label": "10",
+		"name": "archepen.gif",
+		"description": "archepen.gif",
+		"alternate": "archepen.gif",
+		"path": "/contents/images/archepen.gif"
+	},
+	"archnet.IAA13644.JPG": {
+		"label": "11",
+		"name": "archnet.IAA13644.JPG",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Vista del soffitto della cupola. Dall'Aga Khan Trust for Culture via Archnet (<a href='http://archnet.org/library/images/one-image.tcl?location_id=2810&image_id=52133'>IAA13644</a>). Il fregio in marmo della parete esterna probabilmente sostituisce gli originali mosaici. Gli architravi sono decorati con placche di bronzo lavorate a rovescio.",
+		"alternate": "archnet.IAA13644.JPG",
+		"path": "/contents/images/archnet.IAA13644.JPG"
+	},
+	"archnet.ICR0173.JPG": {
+		"label": "12",
+		"name": "archnet.ICR0173.JPG",
+		"description": "Fustat, Il Cairo. Moschea di Ibn Tulun (870-879). Interno, pilastri nell'angolo sud. Da {MYDIR(id=63,desc=)/} via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=3461&image_id=61941'>ICR0173</a>). L'intradosso e l'arco sono decorati in stile B. Le pseudo-colonne sono fatte in mattoni appositamente sagomati.",
+		"alternate": "archnet.ICR0173.JPG",
+		"path": "/contents/images/archnet.ICR0173.JPG"
+	},
+	"archnet.ICR0478.JPG": {
+		"label": "13",
+		"name": "archnet.ICR0478.JPG",
+		"description": "Qairawan, grande moschea (670, 817-838, 856-863). Riwaq, angolo di sud-ovest. Di K.A.C Creswell, da {MYDIR(id=63,desc=)/} via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9836&image_id=62245'>ICR0478</a>).",
+		"alternate": "archnet.ICR0478.JPG",
+		"path": "/contents/images/archnet.ICR0478.JPG"
+	},
+	"archnet.ICR0514.JPG": {
+		"label": "14",
+		"name": "archnet.ICR0514.JPG",
+		"description": "Qairawan, grande moschea (670, 817-838, 856-863). Vista del mihrab. Di K.A.C Creswell, da {MYDIR(id=63,desc=)/} via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9836&image_id=62281'>ICR0514</a>).",
+		"alternate": "archnet.ICR0514.JPG",
+		"path": "/contents/images/archnet.ICR0514.JPG"
+	},
+	"archnet.ICR0521.JPG": {
+		"label": "15",
+		"name": "archnet.ICR0521.JPG",
+		"description": "Qairawan, grande moschea (670, 817-838, 856-863). Dettaglio delle piastrelle a lustro del mihrab. Di K.A.C Creswell, da {MYDIR(id=63,desc=)/} via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9836&image_id=62288'>ICR0521</a>).",
+		"alternate": "archnet.ICR0521.JPG",
+		"path": "/contents/images/archnet.ICR0521.JPG"
+	},
+	"archnet.ICR1891.JPG": {
+		"label": "16",
+		"name": "archnet.ICR1891.JPG",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Platform of the Sakhra, west side. Di K.A.C Creswell, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=1432&image_id=63655'>ICR1891</a>).",
+		"alternate": "archnet.ICR1891.JPG",
+		"path": "/contents/images/archnet.ICR1891.JPG"
+	},
+	"archnet.ICR2544.jpg": {
+		"label": "17",
+		"name": "archnet.ICR2544.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Finestra dal lato occidentale della corte. Di K.A.C Creswell, da The Creswell Archive, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=64308'>ICR2544</a>).",
+		"alternate": "archnet.ICR2544.jpg",
+		"path": "/contents/images/archnet.ICR2544.jpg"
+	},
+	"archnet.ICR2546.jpg": {
+		"label": "18",
+		"name": "archnet.ICR2546.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Finestra dal vestibolo occidentale. Di K.A.C Creswell, da The Creswell Archive, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=64310'>ICR2546</a>).",
+		"alternate": "archnet.ICR2546.jpg",
+		"path": "/contents/images/archnet.ICR2546.jpg"
+	},
+	"archnet.ICR2553-part.jpg": {
+		"label": "19",
+		"name": "archnet.ICR2553-part.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Resto dei mosaici all'interno del santuario. Di K.A.C Creswell, da The Creswell Archive, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=64317'>ICR2553</a>).",
+		"alternate": "archnet.ICR2553-part.jpg",
+		"path": "/contents/images/archnet.ICR2553-part.jpg"
+	},
+	"archnet.IHC0458.jpg": {
+		"label": "20",
+		"name": "archnet.IHC0458.jpg",
+		"description": "Fustat, Il Cairo. Moschea di Ibn Tulun (870-879). Intradosso con stucco scolpito. Da Fine Arts Library, Harvard College Library via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=3461&image_id=17678'>IHC0458</a>).",
+		"alternate": "archnet.IHC0458.jpg",
+		"path": "/contents/images/archnet.IHC0458.jpg"
+	},
+	"archnet.IHJ0061.jpg": {
+		"label": "21",
+		"name": "archnet.IHJ0061.jpg",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Vista da Nordest con la Dome of the Chain. Dal  Fine Arts Library, Harvard College Library via Archnet (<a href='http://archnet.org/library/images/one-image.tcl?location_id=1432&image_id=28898'>IHJ0061</a>).",
+		"alternate": "archnet.IHJ0061.jpg",
+		"path": "/contents/images/archnet.IHJ0061.jpg"
+	},
+	"archnet.IMG08422.jpg": {
+		"label": "22",
+		"name": "archnet.IMG08422.jpg",
+		"description": "Qairawan, grande moschea (670, 817-838, 856-863). Sezione attraverso la cupola di fronte al mihrab. Di K.A.C Creswell, da {MYDIR(id=63,desc=)/} via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9836&image_id=103273'>IMG08422</a>).",
+		"alternate": "archnet.IMG08422.jpg",
+		"path": "/contents/images/archnet.IMG08422.jpg"
+	},
+	"archnet.IMG08433.jpg": {
+		"label": "23",
+		"name": "archnet.IMG08433.jpg",
+		"description": "Qairawan, grande moschea (670, 817-838, 856-863). Pianta. Di K.A.C Creswell, da The Creswell Archive, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9836&image_id=103284'>IMG08433</a>).",
+		"alternate": "archnet.IMG08433.jpg",
+		"path": "/contents/images/archnet.IMG08433.jpg"
+	},
+	"archnet.IMG08441.jpg": {
+		"label": "24",
+		"name": "archnet.IMG08441.jpg",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Pianta. Di K.A.C Creswell, via Archnet (<a href='http://archnet.org/library/images/one-image.tcl?location_id=1432&image_id=103292'>IMG08441</a>).",
+		"alternate": "archnet.IMG08441.jpg",
+		"path": "/contents/images/archnet.IMG08441.jpg"
+	},
+	"3b2.jpg": {
+		"label": "1",
+		"name": "3b2.jpg",
+		"description": "AT&T 3b2 - Università di Padova, D.E.I., Laboratorio di Informatica",
+		"alternate": "3b2.jpg",
+		"path": "/contents/images/3b2.jpg"
+	},
+	"archnet.IMG13453.jpg": {
+		"label": "28",
+		"name": "archnet.IMG13453.jpg",
+		"description": "Grande moschea di Kufa (637 ricostruita nel 670). Pianta e alzato. (Di Nasser Rabbat, dall'Aga Khan Trust for Culture via<a href='http://archnet.org/library/images/one-image.tcl?location_id=9347&image_id=150421'>Archnet</a>)",
+		"alternate": "archnet.IMG13453.jpg",
+		"path": "/contents/images/archnet.IMG13453.jpg"
+	},
+	"archnet.INA0605.JPG": {
+		"label": "30",
+		"name": "archnet.INA0605.JPG",
+		"description": "Fustat, Il Cairo. Moschea di Ibn Tulun (870-879). Il Mihrab e il Minbar. Di Philippe Saad, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=3461&image_id=79056'>INA0605</a>).  I pannelli in marmo sono del periodo mamelucco, mentre i decori in stucco sono originali. Il minbar in legno è un sostituto dell'originale restaurato.",
+		"alternate": "archnet.INA0605.JPG",
+		"path": "/contents/images/archnet.INA0605.JPG"
+	},
+	"archnet.ISR0211.jpg": {
+		"label": "31",
+		"name": "archnet.ISR0211.jpg",
+		"description": "Khirbet al-Mafjar (724-743). Facciata dell'ingresso. Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9085&image_id=42558'>ISR0211</a>).",
+		"alternate": "archnet.ISR0211.jpg",
+		"path": "/contents/images/archnet.ISR0211.jpg"
+	},
+	"archnet.ISR0212.jpg": {
+		"label": "32",
+		"name": "archnet.ISR0212.jpg",
+		"description": "Khirbet al-Mafjar (724-743). Bagno, sezione. Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9085&image_id=425559'>ISR0212</a>).",
+		"alternate": "archnet.ISR0212.jpg",
+		"path": "/contents/images/archnet.ISR0212.jpg"
+	},
+	"archnet.ISR0213.jpg": {
+		"label": "33",
+		"name": "archnet.ISR0213.jpg",
+		"description": "Khirbet al-Mafjar (724-743). Bagno, assonometria. Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9085&image_id=42560'>ISR0213</a>).",
+		"alternate": "archnet.ISR0213.jpg",
+		"path": "/contents/images/archnet.ISR0213.jpg"
+	},
+	"archnet.ISR0214.jpg": {
+		"label": "34",
+		"name": "archnet.ISR0214.jpg",
+		"description": "Khirbet al-Mafjar (724-743). Pianta. Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet, (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9085&image_id=42561'>ISR0214</a>).",
+		"alternate": "archnet.ISR0214.jpg",
+		"path": "/contents/images/archnet.ISR0214.jpg"
+	},
+	"archnet.ISY0532.jpg": {
+		"label": "35",
+		"name": "archnet.ISY0532.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Facciata della navata centrale sulla corte interna. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41100'>ISY0532</a>).",
+		"alternate": "archnet.ISY0532.jpg",
+		"path": "/contents/images/archnet.ISY0532.jpg"
+	},
+	"archnet.ISY0537.jpg": {
+		"label": "36",
+		"name": "archnet.ISY0537.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Dettagli dei mosaici con l'iscrizione di Nur al-Din sopra l'arco del riwaq. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41105'>ISY0537</a>).",
+		"alternate": "archnet.ISY0537.jpg",
+		"path": "/contents/images/archnet.ISY0537.jpg"
+	},
+	"archnet.ISY0539.jpg": {
+		"label": "37",
+		"name": "archnet.ISY0539.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Vista del Mihrab. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41107'>ISY0539</a>).",
+		"alternate": "archnet.ISY0539.jpg",
+		"path": "/contents/images/archnet.ISY0539.jpg"
+	},
+	"archnet.ISY0540.jpg": {
+		"label": "38",
+		"name": "archnet.ISY0540.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Dettaglio del muro esterno con sopra i mosaici e sotto pannelli ornamentali in marmo e la porta di legno intagliato. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41108'>ISY0540</a>).",
+		"alternate": "archnet.ISY0540.jpg",
+		"path": "/contents/images/archnet.ISY0540.jpg"
+	},
+	"archnet.ISY0543.jpg": {
+		"label": "39",
+		"name": "archnet.ISY0543.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Dettagli dei mosaici rappresentante una moschea. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41111'>ISY0543</a>).",
+		"alternate": "archnet.ISY0543.jpg",
+		"path": "/contents/images/archnet.ISY0543.jpg"
+	},
+	"archnet.ISY0544.jpg": {
+		"label": "40",
+		"name": "archnet.ISY0544.jpg",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Dettagli dei mosaici con rappresentazione del fiume Barada e dei palazzi Omayyadi con karma vines. Di Nasser Rabbat, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=8854&image_id=41112'>ISY0544</a>).",
+		"alternate": "archnet.ISY0544.jpg",
+		"path": "/contents/images/archnet.ISY0544.jpg"
+	},
+	"archnet.ISY0580.jpg": {
+		"label": "41",
+		"name": "archnet.ISY0580.jpg",
+		"description": "Qasr al-Hayr al-Gharbi (724-727). Pianta. Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet, (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9087&image_id=42636'>ISY0580</a>).",
+		"alternate": "archnet.ISY0580.jpg",
+		"path": "/contents/images/archnet.ISY0580.jpg"
+	},
+	"archnet.JOR0075.jpg": {
+		"label": "42",
+		"name": "archnet.JOR0075.jpg",
+		"description": "Qusayr 'Amra (712-715). Pianta. Della zona in alto, la parte a ovest è l'ingresso con la sala di ricevimento, la parte ad est è il bagno (apodyterium D, tepidarium L e calidarium F). Di Oleg Grabar, Fine Arts Library, Harvard College Library, via Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=5993&image_id=42635'>JOR0075</a>).",
+		"alternate": "archnet.JOR0075.jpg",
+		"path": "/contents/images/archnet.JOR0075.jpg"
+	},
+	"archnet.JOR0082.jpg": {
+		"label": "43",
+		"name": "archnet.JOR0082.jpg",
+		"description": "Qasr Mshatta (743-744). Pianta. Di Oleg Grabar, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9084&image_id=106943'>JOR0082</a>).",
+		"alternate": "archnet.JOR0082.jpg",
+		"path": "/contents/images/archnet.JOR0082.jpg"
+	},
+	"archnet.JOR0086.jpg": {
+		"label": "44",
+		"name": "archnet.JOR0086.jpg",
+		"description": "Qasr Mshatta (743-744). Vista dell'interno del muro, in mattoni. La parte inferiore è in pietra da taglio. Di  June Williamson, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9084&image_id=69468'>JOR0086</a>).",
+		"alternate": "archnet.JOR0086.jpg",
+		"path": "/contents/images/archnet.JOR0086.jpg"
+	},
+	"bulbocapillina-piccola.png": {
+		"label": "45",
+		"name": "bulbocapillina-piccola.png",
+		"description": "bulbocapillina-piccola.png",
+		"alternate": "bulbocapillina-piccola.png",
+		"path": "/contents/images/bulbocapillina-piccola.png"
+	},
+	"creswell.EA.CA.2106.crop.png": {
+		"label": "47",
+		"name": "creswell.EA.CA.2106.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Analisi di una delle griglie delle finestre. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.2106.html'>EA.CA.2106</a>).",
+		"alternate": "creswell.EA.CA.2106.crop.png",
+		"path": "/contents/images/creswell.EA.CA.2106.crop.png"
+	},
+	"creswell.EA.CA.2155.jpg": {
+		"label": "48",
+		"name": "creswell.EA.CA.2155.jpg",
+		"description": "Qasr al-Hayr al-Sharki (728-729). Pianta. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.2155.html'>EA.CA.2155</a>).",
+		"alternate": "creswell.EA.CA.2155.jpg",
+		"path": "/contents/images/creswell.EA.CA.2155.jpg"
+	},
+	"archnet.IMG13450.jpg": {
+		"label": "26",
+		"name": "archnet.IMG13450.jpg",
+		"description": "Fustat, Il Cairo. Moschea di Ibn Tulun (870-879). Pianta. Di Saeed Arida, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=3461&image_id=150418'>IMG13450</a>).",
+		"alternate": "archnet.IMG13450.jpg",
+		"path": "/contents/images/archnet.IMG13450.jpg"
+	},
+	"creswell.EA.CA.887.crop.png": {
+		"label": "52",
+		"name": "creswell.EA.CA.887.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Porta tripla nel muro sud. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.887.html'>EA.CA.887</a>).",
+		"alternate": "creswell.EA.CA.887.crop.png",
+		"path": "/contents/images/creswell.EA.CA.887.crop.png"
+	},
+	"creswell.EA.CA.888.crop.png": {
+		"label": "53",
+		"name": "creswell.EA.CA.888.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Prospetto del centro e dei due lati della facciata sud. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.888.html'>EA.CA.888</a>).",
+		"alternate": "creswell.EA.CA.888.crop.png",
+		"path": "/contents/images/creswell.EA.CA.888.crop.png"
+	},
+	"cupolaroccia.IMG08442.png": {
+		"label": "54",
+		"name": "cupolaroccia.IMG08442.png",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Assonometria. Il disegno originale è di K.A.C Creswell, via Archnet (<a href='http://archnet.org/library/images/one-image.tcl?location_id=1432&image_id=103293'>IMG08442</a>).",
+		"alternate": "cupolaroccia.IMG08442.png",
+		"path": "/contents/images/cupolaroccia.IMG08442.png"
+	},
+	"edvac1.gif": {
+		"label": "55",
+		"name": "edvac1.gif",
+		"description": "EDVAC",
+		"alternate": "edvac1.gif",
+		"path": "/contents/images/edvac1.gif"
+	},
+	"eniac1548.gif": {
+		"label": "56",
+		"name": "eniac1548.gif",
+		"description": "ENIAC",
+		"alternate": "eniac1548.gif",
+		"path": "/contents/images/eniac1548.gif"
+	},
+	"eniac1563.gif": {
+		"label": "57",
+		"name": "eniac1563.gif",
+		"description": "",
+		"alternate": "eniac1563.gif",
+		"path": "/contents/images/eniac1563.gif"
+	},
+	"eniac4023.gif": {
+		"label": "58",
+		"name": "eniac4023.gif",
+		"description": "ENIAC",
+		"alternate": "eniac4023.gif",
+		"path": "/contents/images/eniac4023.gif"
+	},
+	"lemonII.jpg": {
+		"label": "59",
+		"name": "lemonII.jpg",
+		"description": "Lemon II - Università di Padova, D.E.I., Laboratorio di Informatica",
+		"alternate": "lemonII.jpg",
+		"path": "/contents/images/lemonII.jpg"
+	},
+	"lsx3020.jpg": {
+		"label": "60",
+		"name": "lsx3020.jpg",
+		"description": "Olivetti LSX 3020 - Università di Padova, D.E.I., Laboratorio di Informatica",
+		"alternate": "lsx3020.jpg",
+		"path": "/contents/images/lsx3020.jpg"
+	},
+	"map.jpg": {
+		"label": "61",
+		"name": "map.jpg",
+		"description": "Anjar, VII sec. Pianta. Da <a href='http://www.mousaler.com/anjar/ruins/'>The Umayyad Ruins of Anjar</a>. 1. Palace. 2. Mosque. 3. Second Palace. 4. Public baths and mosques. 5. Living quarters. 6. Cardo Maximus flanked by shops. 7. Decumanus Maximus flanked by shops. 8. Tetrastyle. 9. Fortifications.",
+		"alternate": "map.jpg",
+		"path": "/contents/images/map.jpg"
+	},
+	"meriorentimetro.png": {
+		"label": "62",
+		"name": "meriorentimetro.png",
+		"description": "Un meriorentimetro.",
+		"alternate": "meriorentimetro",
+		"path": "/contents/images/meriorentimetro.png"
+	},
+	"moscheadamasco.grabarf23.png": {
+		"label": "64",
+		"name": "moscheadamasco.grabarf23.png",
+		"description": "Damasco, Moschea degli Omayyadi (705-715). Pianta. Disegno originale di K.A.C Creswell, via Grabar fig. 23",
+		"alternate": "moscheadamasco.grabarf23.png",
+		"path": "/contents/images/moscheadamasco.grabarf23.png"
+	},
+	"moscheaprofeta.alwalid.png": {
+		"label": "65",
+		"name": "moscheaprofeta.alwalid.png",
+		"description": "La Moschea del Profeta a Medina, pianta dopo il restauro di al-Walid.",
+		"alternate": "moscheaprofeta.alwalid.png",
+		"path": "/contents/images/moscheaprofeta.alwalid.png"
+	},
+	"moscheaprofeta.originale.png": {
+		"label": "66",
+		"name": "moscheaprofeta.originale.png",
+		"description": "La Moschea del Profeta a Medina, pianta originale.",
+		"alternate": "moscheaprofeta.originale.png",
+		"path": "/contents/images/moscheaprofeta.originale.png"
+	},
+	"palazzi.struttura.png": {
+		"label": "67",
+		"name": "palazzi.struttura.png",
+		"description": "Tipica struttura di un palazzo, esito finale dell'incontro tra l'architettura romano-bizantina (Giordania) e quella sassanide (Iraq), reinterpretata secondo le nuove esigenze. Le zone abitative non hanno una collocazione ben definita, a volte sono prima, a volte sono dopo la sala del trono.",
+		"alternate": "palazzi.struttura.png",
+		"path": "/contents/images/palazzi.struttura.png"
+	},
+	"questier.20051221-095031_Syria_Qasr_al_Hir_al_Sharqi_2nd-palace.med.jpg": {
+		"label": "69",
+		"name": "questier.20051221-095031_Syria_Qasr_al_Hir_al_Sharqi_2nd-palace.med.jpg",
+		"description": "Qasr al-Hayr al-Sharki (728-729). Recinto piccolo. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051221-095031_Syria_Qasr_al_Hir_al_Sharqi_2nd-palace.med.jpg",
+		"path": "/contents/images/questier.20051221-095031_Syria_Qasr_al_Hir_al_Sharqi_2nd-palace.med.jpg"
+	},
+	"questier.20051221-095214_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg": {
+		"label": "70",
+		"name": "questier.20051221-095214_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg",
+		"description": "Qasr al-Hayr al-Sharki (728-729). Recinto grande. Esterno. Il muro è di pietra e mattoni (tradizione romana). Le due nicche con doppia colonnina invece sono iraniche. La decorazione in alto è fatta in mattoni cotti tagliati. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051221-095214_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg",
+		"path": "/contents/images/questier.20051221-095214_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg"
+	},
+	"questier.20051221-100747_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg": {
+		"label": "71",
+		"name": "questier.20051221-100747_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg",
+		"description": "Qasr al-Hayr al-Sharki (728-729). Recinto grande. Interno. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051221-100747_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg",
+		"path": "/contents/images/questier.20051221-100747_Syria_Qasr_al_Hir_al_Sharqi_Caliph_Palace.med.jpg"
+	},
+	"questier.20051225-094423_Jordan_Qasr_al_Kharaneh.jpg": {
+		"label": "72",
+		"name": "questier.20051225-094423_Jordan_Qasr_al_Kharaneh.jpg",
+		"description": "Qasr Kharane (710). Vista. L'ingresso non ha colonne complete. Da <a href='http://questier.com/'>Frederik Questier</a>",
+		"alternate": "questier.20051225-094423_Jordan_Qasr_al_Kharaneh.jpg",
+		"path": "/contents/images/questier.20051225-094423_Jordan_Qasr_al_Kharaneh.jpg"
+	},
+	"questier.20051225-094521_Jordan_Qasr_al_Kharaneh.jpg": {
+		"label": "73",
+		"name": "questier.20051225-094521_Jordan_Qasr_al_Kharaneh.jpg",
+		"description": "Qasr Kharane (710). Ingresso, con dettaglio sul decoro a pseudo-vegetali astratti e sulla cornice di mattoni a spina di pesce. Da <a href='http://questier.com/'>Frederik Questier</a>",
+		"alternate": "questier.20051225-094521_Jordan_Qasr_al_Kharaneh.jpg",
+		"path": "/contents/images/questier.20051225-094521_Jordan_Qasr_al_Kharaneh.jpg"
+	},
+	"questier.20051225-100731_Jordan_Qasr_al_Kharaneh.jpg": {
+		"label": "74",
+		"name": "questier.20051225-100731_Jordan_Qasr_al_Kharaneh.jpg",
+		"description": "Qasr Kharane (710). Interno. L'arco all'interno della cupola è solo decorativo, per nascondere il punto di appoggio. Anche le colonnette sono in stucco. La volta è realizzata con una colata di pietre spaccate e poi malta su centine. Da <a href='http://questier.com/'>Frederik Questier</a>",
+		"alternate": "questier.20051225-100731_Jordan_Qasr_al_Kharaneh.jpg",
+		"path": "/contents/images/questier.20051225-100731_Jordan_Qasr_al_Kharaneh.jpg"
+	},
+	"questier.20051225-103355_Jordan_Qasr_Amra.med.jpg": {
+		"label": "75",
+		"name": "questier.20051225-103355_Jordan_Qasr_Amra.med.jpg",
+		"description": "Qusayr 'Amra (712-715). Vista. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051225-103355_Jordan_Qasr_Amra.med.jpg",
+		"path": "/contents/images/questier.20051225-103355_Jordan_Qasr_Amra.med.jpg"
+	},
+	"creswell.EA.CA.882.crop.png": {
+		"label": "50",
+		"name": "creswell.EA.CA.882.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Prospetto del centro e dei due lati a nord ossia la facciata sulla grande corte. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.882.html'>EA.CA.882</a>).",
+		"alternate": "creswell.EA.CA.882.crop.png",
+		"path": "/contents/images/creswell.EA.CA.882.crop.png"
+	},
+	"ssec.gif": {
+		"label": "79",
+		"name": "ssec.gif",
+		"description": "SSEC",
+		"alternate": "ssec.gif",
+		"path": "/contents/images/ssec.gif"
+	},
+	"t1.png": {
+		"label": "80",
+		"name": "t1.png",
+		"description": "Sala ipostila a T di primo tipo: le navate sono tutte perpendicolari alla qibla, ma una è più   grande delle altre (Aqsa, <a href='/page/DSCArcheologiaIslamMoscheaProfeta'>Medina</a>, Cordoba)",
+		"alternate": "t1.png",
+		"path": "/contents/images/t1.png"
+	},
+	"t2.png": {
+		"label": "81",
+		"name": "t2.png",
+		"description": "Sala ipostila a T di secondo tipo: le navate sono parallele alla qibla, tranne una che le interseca perpendicolarmente, detta navata assiale (<a href='/page/DSCArcheologiaIslamMoscheaDamasco'>Damasco</a>,  Aleppo,  <a href='/page/DSCArcheologiaIslamQusurHayrSharki'>Qasr al-Hayr al-Sharki</a>)",
+		"alternate": "t2.png",
+		"path": "/contents/images/t2.png"
+	},
+	"turchi.png": {
+		"label": "84",
+		"name": "turchi.png",
+		"description": "Distribuzione delle lingue turche",
+		"alternate": "turchi.png",
+		"path": "/contents/images/turchi.png"
+	},
+	"univac.gif": {
+		"label": "85",
+		"name": "univac.gif",
+		"description": "UNIVAC",
+		"alternate": "univac.gif",
+		"path": "/contents/images/univac.gif"
+	},
+	"archnet.IMG08443.jpg": {
+		"label": "25",
+		"name": "archnet.IMG08443.jpg",
+		"description": "Gerusalemme,  Cupola della  Roccia (692). Prospetto. Di K.A.C Creswell, via Archnet (<a href='http://archnet.org/library/images/one-image.tcl?location_id=1432&image_id=103294'>IMG08443</a>).",
+		"alternate": "archnet.IMG08443.jpg",
+		"path": "/contents/images/archnet.IMG08443.jpg"
+	},
+	"archnet.IMG13452.jpg": {
+		"label": "27",
+		"name": "archnet.IMG13452.jpg",
+		"description": "Qasr Kharane (710). Pianta del primo piano. Di Saeed Arida, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9087&image_id=150420'>IMG13452</a>).",
+		"alternate": "archnet.IMG13452.jpg",
+		"path": "/contents/images/archnet.IMG13452.jpg"
+	},
+	"archnet.IMG13458.jpg": {
+		"label": "29",
+		"name": "archnet.IMG13458.jpg",
+		"description": "Qasr al-Hayr al-Sharki (728-729). Pianta dell'edificio grande. In basso a destra (nord-est) c'è la moschea (ipostila di tipo 2). Le unità abitative sono su due piani con corte centrale porticata. Le quattro strade non si incontrano al centro, ma c'è una grande corte interna. Di Saeed Arida, da Archnet (<a href='http://archnet.org/library/images/one-image.jsp?location_id=9086&image_id=150426'>IMG13485</a>).",
+		"alternate": "archnet.IMG13458.jpg",
+		"path": "/contents/images/archnet.IMG13458.jpg"
+	},
+	"creswell.EA.CA.2104.crop.png": {
+		"label": "46",
+		"name": "creswell.EA.CA.2104.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Analisi di una delle griglie delle finestre. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.2104.html'>EA.CA.2104</a>).",
+		"alternate": "creswell.EA.CA.2104.crop.png",
+		"path": "/contents/images/creswell.EA.CA.2104.crop.png"
+	},
+	"creswell.EA.CA.2199.crop.png": {
+		"label": "49",
+		"name": "creswell.EA.CA.2199.crop.png",
+		"description": "Fustat, Il Cairo. Moschea di Ibn Tulun (870-879). Prospetti. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.2199.html'>EA.CA.2199</a>).",
+		"alternate": "creswell.EA.CA.2199.crop.png",
+		"path": "/contents/images/creswell.EA.CA.2199.crop.png"
+	},
+	"creswell.EA.CA.883.crop.png": {
+		"label": "51",
+		"name": "creswell.EA.CA.883.crop.png",
+		"description": "Damasco. Moschea degli Omayyadi (705-715). Sezione attraverso la navata est e le ali e la corte guardando a ovest. Di K.A.C. Creswell, da The Creswell Archive, Ashmolean Museum of Art and Archaeology (<a href='http://creswell.ashmolean.org/archive/EA.CA.883.html'>EA.CA.883</a>).",
+		"alternate": "creswell.EA.CA.883.crop.png",
+		"path": "/contents/images/creswell.EA.CA.883.crop.png"
+	},
+	"mitopencourseware-5024.jpg": {
+		"label": "63",
+		"name": "mitopencourseware-5024.jpg",
+		"description": "Assonometria della Moschea del Profeta a Medina (after Creswell). Da <a href='http://ocw.mit.edu/OcwWeb/Architecture/4-614Religious-Architecture-and-Islamic-CulturesFall2002/CourseHome/index.htm'>MIT OpenCourseWare - 4.614 Religious Architecture and Islamic Cultures - Fall 2002</a>.",
+		"alternate": "mitopencourseware-5024.jpg",
+		"path": "/contents/images/mitopencourseware-5024.jpg"
+	},
+	"questier.20051219-090358_Syria_Damascus_National_museum_Qasr_al-Hayr_al-Gharbi_f.jpeg": {
+		"label": "68",
+		"name": "questier.20051219-090358_Syria_Damascus_National_museum_Qasr_al-Hayr_al-Gharbi_f.jpeg",
+		"description": "Qasr al-Hayr al-Gharbi (724-727). La facciata, ora ingresso del museo nazionale di Damasco. Ha un arco di scarico sulla facciata e decorazioni a stucco. I merli a dente di sega sono simili a quelli del palazzo Omayyade di Amman. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051219-090358_Syria_Damascus_National_museum_Qasr_al-Hayr_al-Gharbi_f.jpeg",
+		"path": "/contents/images/questier.20051219-090358_Syria_Damascus_National_museum_Qasr_al-Hayr_al-Gharbi_f.jpeg"
+	},
+	"questier.20051225-105740_Jordan_Qasr_Amra_Hydraulic_System.jpg": {
+		"label": "76",
+		"name": "questier.20051225-105740_Jordan_Qasr_Amra_Hydraulic_System.jpg",
+		"description": "Qusayr 'Amra (712-715). Dettaglio del sistema idraulico. Da <a href='http://questier.com/'>Frederik Questier</a>.",
+		"alternate": "questier.20051225-105740_Jordan_Qasr_Amra_Hydraulic_System.jpg",
+		"path": "/contents/images/questier.20051225-105740_Jordan_Qasr_Amra_Hydraulic_System.jpg"
+	},
+	"scutum_teoduberti_piccolo.png": {
+		"label": "77",
+		"name": "scutum_teoduberti_piccolo.png",
+		"description": "scutum_teoduberti_piccolo.png",
+		"alternate": "scutum_teoduberti_piccolo.png",
+		"path": "/contents/images/scutum_teoduberti_piccolo.png"
+	},
+	"snova.jpg": {
+		"label": "78",
+		"name": "snova.jpg",
+		"description": "Scheda di un Nova - Paolo Cavalletto, Collezione Privata",
+		"alternate": "snova.jpg",
+		"path": "/contents/images/snova.jpg"
+	},
+	"t3.png": {
+		"label": "82",
+		"name": "t3.png",
+		"description": "Sala ipostila a T di terzo tipo: le navate sono parallele alla qibla, tranne una che le interseca perpendicolarmente; di quelle parallele, la più vicina alla qibla è più grande e ha una cupola allintersezione con la navata assiale (di Abu Dulaf a <a href='/page/DSCArcheologiaIslamCittaAbbassidiSamarra'>Samarra</a>, <a href='/page/DSCArcheologiaIslamMoscheaKairawan'>Qairawan</a>)",
+		"alternate": "t3.png",
+		"path": "/contents/images/t3.png"
+	},
+	"t5625.jpg": {
+		"label": "83",
+		"name": "t5625.jpg",
+		"description": "Terminale AT&T 5625 - Università di Padova, D.E.I., Laboratorio di Informatica",
+		"alternate": "t5625.jpg",
+		"path": "/contents/images/t5625.jpg"
+	},
+	"DamgaardFig2.jpg": {
+		"label": "3",
+		"name": "DamgaardFig2.jpg",
+		"description": "Jerash (630-650). Plan of Jarash including the presumed principal features of the early Islamic town. Legend: 1) Umayyad mosque; 2) Possible Islamic administrative centre; 3) Umayyad 'House' as excavated by the Polish mission - potential market area (suq 4) South tetrakonia - built over; 5) Macellum & Southern Cardo; 6) Oval Piazza - domestic quarter; 7) Zeus temple forecourt - potential industrial area; 8) Hippodrome and Bishop Marianos church; 9) SS Peter and Paul church; 10) Churches of SS Cosmas and Damianus, St George and St John the Baptist; 11) Christian complex of two churches, a bath and housing all occupied under the Umayyads/Abbasids; 12) Artemis compound - Islamic ceramic production; 13) Synagogue church; 14) North Theatre - industrial area with large kilns; 15) Naghawi's 'Umayyad mosque' discovered in 1981; 16) Central cardo with blacksmith's shop. (Copyright © Alan Walmsley/IJP), da <a href='http://www.assemblage.group.shef.ac.uk/issue8/damgaardandblanke.html'>The Islamic Jarash Project: A Preliminary Report on the First Two Seasons of Fieldwork</a>.",
+		"alternate": "DamgaardFig2.jpg",
+		"path": "/contents/images/DamgaardFig2.jpg"
+	},
+	"Mschatta-Fassade_Pergamonmuseum.jpg": {
+		"label": "5",
+		"name": "Mschatta-Fassade_Pergamonmuseum.jpg",
+		"description": "Qasr Mshatta (743-744). Parte della facciata conservata al Pergamon Museum a Berlino  © Raimond Spekking / Wikimedia Commons / CC-BY-SA-3.0 & GFDL (<a href='http://commons.wikimedia.org/wiki/Image:Mschatta-Fassade_%28Pergamonmuseum%29.jpg'>Image:Mschatta-Fassade (Pergamonmuseum).jpg</a>).",
+		"alternate": "Mschatta-Fassade_Pergamonmuseum.jpg",
+		"path": "/contents/images/Mschatta-Fassade_Pergamonmuseum.jpg"
+	},
+	"omayyadi-abbassidi.png": {
+		"label": "89",
+		"name": "omayyadi-abbassidi.png",
+		"description": "Principali centri Omayyadi e Abbassidi",
+		"alternate": "Principali centri Omayyadi e Abbassidi",
+		"path": "/contents//images/archeo.png"
+	}
+}

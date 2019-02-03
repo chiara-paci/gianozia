@@ -2,4 +2,37 @@
 title: Home
 layout: default
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<img id="homecarta" src='{{ "/assets/images/atlante/gianozia_cartina.png" | relative_url }}'/>
+
+<p>Benvenuti nel sito web  ufficiale della Repubblica Popolare per
+  Azioni della Gianozia Orientale.</p>
+
+<p>In  questo  sito potrete  trovare  informazioni sulla  Gianozia
+  Orientale e sulle sue attivit&agrave;.</p>
+
+<p>Il felice popolo  della Gianozia Orientale vi accoglier&agrave;
+  a  braccia   aperte.</p>
+
+<p>Venite  <!-- a  scoprire   come  diventare  
+  <a  href="/info/cittadinanza.html">cittadini</a>   e-->  a  giocare
+  nella    <a href="{{ "/ludoteca" | relative_url }}">ludoteca   di
+    stato</a>.</p>
+
+<p>Visitate <a href="{{ "/archivio" | relative_url }}">l'archivio
+    di Stato</a> e leggete della nostra
+  <a href="{{ "/politica_estera" | relative_url }}">politica estera</a>.</p>
+
+{% for section in site.data.home_sections %}
+<section id="{{ section.label }}">
+  {% for block in section.blocks %}
+  {% if block.valid %}
+  <div>
+    <h1>{{ block.title }}</h1>
+    <img src="{{ block.image_url }}" alt="{{ block.image_alt }}" width="100px">
+    {{ block.page_text }}
+    <a class="followme" href="{{ block.page_url }}">Leggi...</a>
+  </div>
+  {% endif %}
+  {% endfor %}
+</section>
+{% endfor %}

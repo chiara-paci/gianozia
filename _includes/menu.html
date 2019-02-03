@@ -1,0 +1,10 @@
+{% for item in menu.items %}
+{% if item.type == "sep" %}<hr/>
+{% else %}
+<p class="level{{ item.level }} {{ item.type }}">
+  {% if item.url %}<a href="{{ item.url | relative_url }}">{% endif %}
+    {{ item.text }}
+  {% if item.url %}</a>{% endif %}
+</p>
+{% endif %}
+{% endfor %}

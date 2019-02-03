@@ -1,0 +1,4 @@
+{% assign image=site.data.images[image_name] %}
+<figure>
+<img src="{{ image.path|relative_url }}" alt="{{ image.alternate }}"/>
+<figcaption>{{ image.description }}</figcaption></figure>

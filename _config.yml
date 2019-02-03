@@ -1,2 +1,9 @@
 repository: chiara-paci/gianozia
 baseurl: gianozia
+url: https://chiara-paci.github.io
+exclude: [elaborazione,old]
+
+collections:
+  documents:
+    output: true
+

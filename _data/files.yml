@@ -1,0 +1,64 @@
+- label: 1
+  name: bulbocapillina.png
+  description: dimensione di 2848x3890
+  path: /contents/files/bulbocapillina.png
+- label: 2
+  name: falco-0-12.pdf
+  description: Capitoli da 1 a 12 in formato pdf
+  path: /contents/files/falco-0-12.pdf
+- label: 3
+  name: gianozia_flag.jpg
+  description: gianozia_flag.jpg
+  path: /contents/files/gianozia_flag.jpg
+- label: 4
+  name: libtavole.py
+  description: libtavole.py
+  path: /contents/files/libtavole.py
+- label: 5
+  name: mahjong.tar.gz
+  description: Mahjong
+  path: /contents/files/mahjong.tar.gz
+- label: 6
+  name: memory.tar.gz
+  description: Memory
+  path: /contents/files/memory.tar.gz
+- label: 7
+  name: numprimi.py
+  description: numprimi.py
+  path: /contents/files/numprimi.py
+- label: 8
+  name: radici.py
+  description: radici.py
+  path: /contents/files/radici.py
+- label: 9
+  name: sl_cosa.pdf
+  description: Cos'è il software libero
+  path: /contents/files/sl_cosa.pdf
+- label: 11
+  name: sl_umanisti.pdf
+  description: Software Libero per Umanisti
+  path: /contents/files/sl_umanisti.pdf
+- label: 13
+  name: tavole-numprimi.pdf
+  description: Numeri primi fino a 10000
+  path: /contents/files/tavole-numprimi.pdf
+- label: 14
+  name: tavole-radici.pdf
+  description: Potenze e radici fino 1000
+  path: /contents/files/tavole-radici.pdf
+- label: 15
+  name: tetris.tar.gz
+  description: Tetris
+  path: /contents/files/tetris.tar.gz
+- label: 16
+  name: turco-grammatica.pdf
+  description: Appunti di grammatica turca
+  path: /contents/files/turco-grammatica.pdf
+- label: 17
+  name: turco-poesie.pdf
+  description: Antologia di poesie turche
+  path: /contents/files/turco-poesie.pdf
+- label: 10
+  name: sl_nonprogrammatori.pdf
+  description: Utilità del software libero per i non programmatori
+  path: /contents//files/bulbocapillina.png
