@@ -11,7 +11,7 @@
 	<section>
 	  {% for block in section.blocks %}
 	  {% if block.valid %}
-	  <a href="{{ block.page_url }}">{{ block.short_title }}</a>
+	  <a href="{{ block.page_url | relative_url }}">{{ block.short_title }}</a>
 	  {% endif %}
 	  {% endfor %}
 	</section>

@@ -5,7 +5,7 @@ layout: homepage
 
 <section>
 
-<img id="homecarta" src="/contents/images/atlante/gianozia-cartina.png"/>
+<img id="homecarta" src='{{ "/contents/images/atlante/gianozia-cartina.png" | relative_url }}'/>
 
 <p>Benvenuti nel sito web  ufficiale della Repubblica Popolare per
   Azioni della Gianozia Orientale.</p>
@@ -17,7 +17,7 @@ layout: homepage
   a  braccia   aperte.</p>
 
 <p>Venite  <!-- a  scoprire   come  diventare  
-  <a  href="/info/cittadinanza.html">cittadini</a>   e-->  a  giocare
+		<a  href="/info/cittadinanza.html">cittadini</a>   e-->  a  giocare
   nella    <a href="{{ "/ludoteca" | relative_url }}">ludoteca   di
     stato</a>.</p>
 
@@ -35,7 +35,7 @@ layout: homepage
     <h1>{{ block.title }}</h1>
     <img src="{{ block.image_url }}" alt="{{ block.image_alt }}" width="100px" class="randomimg" data-random_id="{{ block.image_url }}">
     {{ block.page_text }}
-    <a class="followme" href="{{ block.page_url }}">Leggi...</a>
+    <a class="followme" href="{{ block.page_url | relative_url }}">Leggi...</a>
   </div>
   {% endif %}
   {% endfor %}
@@ -52,7 +52,7 @@ randomimgs["random:{{ set.label }}"]={
     "ind": 0
 };
 {% for img in set.images %}
-randomimgs["random:{{ set.label }}"]["images"].push("/assets/randomimgs/{{ img }}");
+randomimgs["random:{{ set.label }}"]["images"].push("./assets/randomimgs/{{ img }}");
 {% endfor %}
 {% endfor %}
 
