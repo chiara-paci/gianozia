@@ -1,30 +1,12 @@
 <!doctype html>
 <html>
-
-  {% include html_head.html %}
-
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
   <body>
-
-    <header>
-
-      <div id="headerbanner">
-	<p class="headerbox3">Repubblica Popolare Per Azioni della Gianozia Orientale</p>
-	<img alt="logo grande" src="/assets/brand/logo.svg" id="logogrande" class="headerbox3"/>
-	<p class="headerbox3">&Ouml;stergianotische Aktiendemokratische Republik</p>
-      </div>
-
-      {% include navigation.html %}
-
-
-    </header>
-
-    <main>
-
+    {% include navigation.html %}
     {{ content }}
-
-    </main>
-
-    {% include footer.html %}
-
   </body>
 </html>

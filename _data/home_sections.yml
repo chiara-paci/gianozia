@@ -1,48 +1,28 @@
-- label: descrizione
+- label: a
   blocks:
-    - title: "La storia della Gianozia Orientale"
-      short_title: Storia
+    - title: ab
       valid: true
-      image_url: random:ministoria
-      image_alt: ""
+      image_url: xx
+      image_alt: xx
       page_url: yy
       page_text: zz zzkajljssa
-    - title: "Dov'è la Gianozia Orientale"
-      short_title: Geografia
+    - title: cd
       valid: true
-      image_url: random:minigeo
-      image_alt: ""
+      image_url: xx
+      image_alt: xx
       page_url: yy
       page_text: zz zzkajljssa
-    - title: "Le lingue della Gianozia Orientale"
-      short_title: Lingue
-      valid: true
-      image_url: random:minilingue
-      image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
-- label: exblogs
+- label: q
   blocks:
-    - title: La cucina gianoziana
-      short_title: Cucina
+    - title: qab
       valid: true
-      image_url: random:minicuc
-      image_alt: ""
+      image_url: xx
+      image_alt: xx
       page_url: yy
       page_text: zz zzkajljssa
-    - title: La biblioteca gianoziana
-      short_title: Biblioteca
+    - title: qcd
       valid: true
-      image_url: random:minibib
-      image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
-- label: unikant
-  blocks:
-    - title: Università Immanuel Kant
-      short_title: Università
-      valid: true
-      image_url: random:miniuni
-      image_alt: ""
+      image_url: xx
+      image_alt: xx
       page_url: yy
       page_text: zz zzkajljssa
