@@ -1,3 +1,161 @@
+@import "colors";
+
 .current {
   color: green;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body{
+    font-family: 'Raleway', serif;
+    font-size: 12pt;
+    background: linear-gradient(30deg,
+				$color-yellow-light-4,
+				$color-yellow-light-1,
+				$color-yellow-light-4);
+    color: black;
+}
+
+/*****************************************
+  HEADER
+ *****************************************/
+
+header {
+
+    #headerbanner {
+	background: linear-gradient(to left,$color-red-3,$color-red-1,$color-red-3);
+
+	position: relative;
+	box-shadow: 0 1px 4px rgba($color-yellow-2, 0.6), 
+		    0 0 20px 4px rgba($color-red-2, 0.3) inset;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+
+	text-shadow: 2px 2px 2px $color-red-2, -1px -1px 2px $color-red-light-3;
+	color: $color-yellow-light-3;
+
+	img {
+	    width: 30%;
+	}
+
+	p {
+	    width: 25%;
+	    text-align: center;
+	    font-size: 30pt;
+	}
+
+    }
+    
+    #headerbanner:after,#headerbanner:before {
+	content:"";
+	z-index:-100;
+	position: absolute;
+	top:50%;
+	bottom:15px;
+	left:10px;
+	right: 40%;
+	top: 80%;
+	box-shadow: 0 15px 10px rgba($color-yellow-2,1);
+	background: rgba($color-yellow-2,.8);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+    }
+    
+    #headerbanner:after {
+	right: 10px;
+	left: 40%;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+    }
+    
+
+}
+
+
+/*****************************************
+  FOOTER
+ *****************************************/
+
+footer {
+    min-height: 3em;
+    margin-top: 5em;
+    font-size: 80%;
+    color: $color-yellow-0;
+    border-top: 1px solid $color-yellow-0;
+    background: rgba($color-yellow-light-1,0.2);
+    padding: .2em;
+
+    a {
+	color: $color-yellow-0;
+	text-decoration: none;
+    }
+
+    a:hover {
+	text-decoration: underline;
+    }
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    section {
+
+	margin-top: .2em;
+	margin-bottom: 1em;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
+
+	section {
+	    margin: 0;
+	    margin-right: 1em;
+	    margin-left: 1em;
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: space-around;
+	    align-items: flex-start;
+	    align-content: center;
+
+	    a {
+		display: block;
+	    }
+
+	}
+	
+
+	
+    }
+
 }
