@@ -5,22 +5,22 @@
       valid: true
       image_url: random:ministoria
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url: /page/StoriaGianozia
+      page_text: "Gianozia, la terra del fiero ed indomito popolo pseudogermanico quasiceltico sicuramentelatino dei Gianoti. In epoca preistorica, si ipotizza che la Gianozia fosse abitata da un raro gruppo di Cro-Mangion. Più avanti, alcuni documenti parlano di 3 tribù, i Noti, i Gianoti e gli Stranoti. Già in epoca Greca la distinzione tra le tre tribù si affievolisce mentre si stabilisce l'egemonia dei Gianoti."
     - title: "Dov'è la Gianozia Orientale"
       short_title: Geografia
       valid: true
       image_url: random:minigeo
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url:  /page/GeografiaGianozia
+      page_text: "Geograficamente la Gianozia si estende dal meridiano tot al meridiano tale ed è una delle principali, più grandi e prospere regioni del Merioriente. Il nome \"Merioriente\" della regione trae origine dall'arcaico \"me rioriento\" segnale con cui i generali Gianoti cominciano \"manovra di spostamento\" (detta appunto \"merioriento\") dopo aver atteso a piè fermo il nemico fino all'ultimo."
     - title: "Le lingue della Gianozia Orientale"
       short_title: Lingue
       valid: true
       image_url: random:minilingue
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url: /page/LingueGianozia
+      page_text: "Ci sono due lingue principali in Gianozia: il gianoziano e lo stranoziano. Entrambi discendono dal noziano, l'antica lingua dei Noti, e quindi dal modulare M."
 - label: exblogs
   blocks:
     - title: La cucina gianoziana
@@ -28,15 +28,15 @@
       valid: true
       image_url: random:minicuc
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url: /page/CucinaGianozia
+      page_text: "Contrariamente a quello che succede in altri casi, dove la ricerca della tradizione e della genuinità spesso si accompagnano a un rifiuto di tutto quello che è sentito come straniero, la cucina gianoziana è sempre aperta ad accogliere influssi esterni. Anzi, si potrebbe persino sostenere che è questo continuo desiderio di inglobare e assimilare che rappresenta il tratto più caratteristico della cucina gianoziana."
     - title: La biblioteca gianoziana
       short_title: Biblioteca
       valid: true
       image_url: random:minibib
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url: /page/Biblioteca
+      page_text: "Forte di una tradizione millenaria, la Biblioteca Gianoziana propone alcuni dei migliori testi disponibili on-line, sia gianoziani che, soprattutto, non gianoziani. Non mancano i consigli su come utilizzare Internet per scrivere ricerche, tesi e tesine, e per fare ricerca umanistica e bibliografica."
 - label: unikant
   blocks:
     - title: Università Immanuel Kant
@@ -44,5 +44,8 @@
       valid: true
       image_url: random:miniuni
       image_alt: ""
-      page_url: yy
-      page_text: zz zzkajljssa
+      page_url: /page/HomeUnikant
+      page_text: "L'Università \"Immanuel Kant\" è il maggior centro di cultura e studio della Gianozia Orientale. Comprende tre dipartimenti.<br/>
+Il <b>Dipartimento di Studi Corofrastiani</b> si occupa dello studio della vita e delle opere di San Corofrasto da Coronella e della sua contestualizzazione. Si occupa anche dello studio della storia e delle lingue.<br/>
+Il <b>Dipartimento di Elettronica e Informatica</b> si occupa di informatica e studi emacsiti.<br/>
+Il <b>Dipartimento di Informatica per non Informatici</b> si rivolge a tutte le persone che usano l'informatica per il lavoro o nel tempo libero e non sono informatici di professione."

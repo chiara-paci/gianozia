@@ -2,7 +2,7 @@
       <section>
 	<section>
 	  <a  href="/info/cittadinanza.html">Cittadinanza</a>
-	  <a href="{{ "/ludoteca" | relative_url }}">Ludoteca</a>
+	  <a href="{{ "/page/Ludoteca" | relative_url }}">Ludoteca</a>
 	  <a href="{{ "/archivio" | relative_url }}">Archivio</a>
 	  <a href="{{ "/politica_estera" | relative_url }}">Politica estera</a>
 	</section>
@@ -15,7 +15,13 @@
 	  {% endif %}
 	  {% endfor %}
 	</section>
-      {% endfor %}
+	{% endfor %}
+
+	<section>
+	  <a href='{{ "/page/FAQ" | relative_url }}'>FAQ</a>
+	  <a href='{{ "/page/License" | relative_url }}'>Copyright/copyleft</a>
+	</section>
+
       </section>
 
       <section>

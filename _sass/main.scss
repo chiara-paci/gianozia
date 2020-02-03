@@ -15,19 +15,24 @@ body, html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    border: 0;
+    //border: 1px solid blue;
 }
 
 
 body{
     font-family: 'Raleway', serif;
-    font-size: 12pt;
+    font-size: 1.7vw;
     background: linear-gradient(30deg,
 				$color-yellow-light-4,
 				$color-yellow-light-1,
 				$color-yellow-light-4);
     color: black;
+    @media screen and (max-width: 700px) {
+	font-size: 1.75vw;
+    }
 }
+
+
 
 /*****************************************
   HEADER
@@ -35,7 +40,7 @@ body{
 
 header {
 
-    #headerbanner {
+    #headerbanner, #headerpage {
 	background: linear-gradient(to left,$color-red-3,$color-red-1,$color-red-3);
 
 	position: relative;
@@ -52,6 +57,9 @@ header {
 	text-shadow: 2px 2px 2px $color-red-2, -1px -1px 2px $color-red-light-3;
 	color: $color-yellow-light-3;
 
+    }
+
+    #headerbanner {
 	img {
 	    width: 30%;
 	}
@@ -59,11 +67,92 @@ header {
 	p {
 	    width: 25%;
 	    text-align: center;
-	    font-size: 30pt;
+	    font-size: 2vw;
+	}
+
+	@media screen and (max-width: 700px) {
+	    p {
+		width: 35%;
+		font-size: 3vw;
+	    }
+	    img {
+		width: 25%;
+	    }
+	    
 	}
 
     }
+
+    #headerpage {
+	margin-bottom: 2em;
+
+	a {
+	    width: 10%;
+	    img {
+		width: 100%;
+	    }
+	}
+
+	div {
+	    width: 85%;
+	    p {
+		text-align: left;
+		font-size: 2vw;
+	    }
+	}
+
+	@media screen and (max-width: 700px) {
+	    p {
+		font-size: 3vw;
+	    }
+	}
+
+	nav {
+	    margin-top: 1em;
+
+	    @media screen and (max-width: 780px) {
+		display: none;
+	    }
+
+
+	    a {
+		display: inline-block;
+		width: 7em;
+		text-align: center;
+		line-height: 1.5em;
+		padding-bottom: .1em;
+
+		margin-right: .5em;
+		padding-left: .5em;
+		padding-right: .5em;
+
+		@media screen and (max-width: 800px) {
+		    margin-right: .2em;
+		    padding-left: .2em;
+		    padding-right: .2em;
+		}
+
+		border-radius: 2em;
+		//border: 1px solid $color-yellow-1;
+		text-decoration: none;
+		color: $color-yellow-1;
+		box-shadow: 0 -1px 3px rgba($color-red-3, .5) inset, 
+			    0  1px 3px rgba($color-red-3, .5) inset;
+		font-weight: bold;
+		font-size: .8em;
+
+	    }
+
+	    a:hover {
+		background: rgba($color-yellow-1,.5);
+	    }
+
+	}
+
+    }
+
     
+    #headerpage:after,#headerpage:before,
     #headerbanner:after,#headerbanner:before {
 	content:"";
 	z-index:-100;
@@ -92,9 +181,7 @@ header {
 	transform: rotate(2deg);
     }
     
-
 }
-
 
 /*****************************************
   FOOTER
@@ -157,5 +244,266 @@ footer {
 
 	
     }
+
+}
+
+
+/**********************
+*** MAIN
+**********************/
+
+main.home {
+
+    padding: .5em;
+
+    text-align: justify;
+
+    a, a:visited {
+	color: $color-purple-0;
+	text-decoration: none;
+	font-weight: bold;
+    }
+
+    a:hover {
+	text-decoration: underline;
+    }
+
+    h1 {
+	background: linear-gradient(30deg,$color-yellow-0,
+				    $color-yellow-light-0,$color-yellow-2);
+	color: $color-red-3;
+	padding: .1em;
+	text-align: center;
+	margin-bottom: .5em;
+    }
+
+    section.main {
+	margin: 1em;
+	padding: .5em;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+
+	@media screen and (max-width: 700px) {
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: stretch;
+	}
+
+	font-size: 2vw;
+	@media screen and (max-width: 700px) {
+	    font-size: 3vw;
+	}
+
+	figure:before { 
+	    display: block;
+	    content:"";
+	    position:absolute; 
+	    -webkit-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+	    -moz-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+	    box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+	    top:10%;
+	    bottom:10%;
+	    left:0%;
+	    right:0%;
+	    -moz-border-radius: 10px / 200px;
+	    border-radius:10px / 200px;
+	    z-index: -100;
+	} 
+	
+	figure {
+	    width: 50vw;
+	    
+	    img {
+		width: 100%;
+	    }
+	    
+	    margin: 1em;
+	    position: relative;
+	    -webkit-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+	    -moz-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+	    box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+	    //z-index: 1;
+	    
+	    background: $color-yellow-light-1;
+	    
+	    figcaption {
+		font-size: .8em;
+		text-align: center;
+		width: 100%;
+	    }
+
+	    @media screen and (max-width: 700px) {
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+	    }
+	}
+
+	div {
+	    padding-left: 1em;
+	    padding-right: 1em;
+	    p {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	    }
+
+	    @media screen and (max-width: 700px) {
+		width: 100vw;
+	    }
+
+	}
+
+
+
+    }
+
+    
+    section.blockcontainer {
+
+	margin-top: 4em;
+	margin-bottom: 1em;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+
+	@media screen and (max-width: 700px) {
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: stretch;
+	}
+
+
+	section.block {
+	    flex: 1 1 0;
+	    min-width: 0;
+	    //align-self: flex-start;
+
+	    position: relative;
+
+	    p.followme {
+		text-align: right;
+		vertical-align: bottom;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	    }
+
+	    img {
+		float: left;
+		position: relative;
+		margin: .5em;
+		margin-left: 0;
+		margin-top: 0;
+		width: 12.5vw;
+		max-width: 100px;
+
+	    }
+	    clear: left;
+	    margin: .5em;
+	    
+	    font-size: 1.5vw;
+	    @media screen and (max-width: 700px) {
+		font-size: 2.25vw;
+	    }
+	}
+
+    }
+
+}
+
+main {
+
+    aside {
+	float: right;
+	margin: .5em;
+	padding: .5em;
+	background: lighten($color-purple-light-1,15);
+	font-size: .8em;
+
+	p.level1 { 
+	    margin-left: 1em;
+	}
+
+	p.level2 { 
+	    margin-left: 2em;
+	}
+
+	p.level1, p.level2 {
+	    border-left: 2px solid transparent;
+	    margin-top: 3px;
+	    padding-left: 2px;
+	}
+
+	p.level1:hover, p.level2:hover {
+	    border-left: 2px solid $color-purple-light-4;
+	}
+
+
+	.title {
+	    background: $color-purple-light-4;
+	    color: $color-purple-light-1;
+	    font-weight: bold;
+	}
+
+	p.level0.title {
+	    margin-top: 1em;
+	}
+
+	a {
+	    font-weight: normal;
+	    width: 100%;
+	}
+	a:hover {
+	    text-decoration: none;
+	}
+
+	padding-bottom: 1em;
+
+    }
+
+    clear: right;
+
+    padding: .5em;
+
+    text-align: justify;
+
+    a, a:visited {
+	color: $color-purple-0;
+	text-decoration: none;
+	font-weight: bold;
+    }
+
+    a:hover {
+	text-decoration: underline;
+    }
+
+    h1.page {
+	clear: right;
+	background: linear-gradient(30deg,$color-yellow-0,
+				    $color-yellow-light-0,$color-yellow-2);
+	color: $color-red-3;
+	padding: .1em;
+	text-align: center;
+	margin-bottom: .5em;
+    }
+
+    article {
+	background: white;
+	padding: 1em;
+
+	h1 {
+
+	}
+    }
+
 
 }
