@@ -7,12 +7,13 @@
     <header>
       <div id="headerpage">
 	<a href='{{ "/" | relative_url }}'>
-	  <img alt="logo grande" src='{{ "/assets/brand/logo.svg" | relative_url }}' id="logogrande" class="headerbox3"/>
+	  <img alt="logo grande" src='{{ "/assets/brand/logo.svg" | relative_url }}' 
+	       id="logogrande" class="headerbox3"/>
 	</a>
 	<div>
 	  <p class="headerbox3">Repubblica Popolare Per Azioni della Gianozia Orientale</p>
 	  <p class="headerbox3">&Ouml;stergianotische Aktiendemokratische Republik</p>
-	  <nav>
+	  <nav class="bigviewport">
 	    <a href='{{ "/page/HomeUnikant" | relative_url }}'>Università</a>
 	    <a href='{{ "/page/StoriaGianozia" | relative_url }}'>Storia</a>
 	    <a href='{{ "/page/GeografiaGianozia" | relative_url }}'>Geografia</a>
@@ -22,6 +23,18 @@
 	    <a href='{{ "/page/Cucina" | relative_url }}'>Cucina</a>
 	  </nav>
 	</div>
+
+	<nav class="littleviewport">
+	  <a href='#' class="handle"><i class="fa fa-bars"></i></a>
+	  <a href='{{ "/page/HomeUnikant" | relative_url }}'>Università</a>
+	  <a href='{{ "/page/StoriaGianozia" | relative_url }}'>Storia</a>
+	  <a href='{{ "/page/GeografiaGianozia" | relative_url }}'>Geografia</a>
+	  <a href='{{ "/page/LingueGianozia" | relative_url }}'>Lingue</a>
+	  <a href='{{ "/page/ArchiviKGBaol" | relative_url }}'>Archivio</a>
+	  <a href='{{ "/page/Biblioteca" | relative_url }}'>Biblioteca</a>
+	  <a href='{{ "/page/Cucina" | relative_url }}'>Cucina</a>
+	</nav>
+
       </div>
     </header>
 
@@ -29,17 +42,21 @@
 
       <h1 class="page">{{ page.title }}</h1>
 
+      {% if page.scheda or page.menus or page.has_toc %}
       <aside>
 	
+	{% if page.scheda %}
 	<table>
 	  {% for p in page.scheda %}
 	  <tr><th>{{ p.key }}</th><td>{{ p.value }}</td></tr>
 	  {% endfor %}
 	</table>
+	{% endif %}
 	
-	<p>{% if page.has_toc %}Table of contents{% endif %}</p>
+	{% if page.has_toc %}<nav id="pagetoc"></nav>{% endif %}
 	
-	<nav>
+	{% if page.menus %}
+	<nav id="pagemenu">
 	  {% for m in page.menus %}
 	  {% assign dmenu=site.data.menus[m] %}
 	  {% for ch in dmenu.children %}
@@ -50,7 +67,9 @@
 	  {% include menu.html %}
 	  {% endfor %}
 	</nav>
+	{% endif %}
       </aside>
+      {% endif %}
       
       <article>
 	{{ content }}
@@ -60,6 +79,15 @@
 
     {% include footer.html %}
 
+
+    <script>
+      $("nav.littleviewport a").hide();
+      $("nav.littleviewport a.handle").show();
+      $("nav.littleviewport a.handle").click(function(event){
+	  event.preventDefault();
+	  $(this).siblings().toggle();
+      });
+    </script>
 
   </body>
 </html>

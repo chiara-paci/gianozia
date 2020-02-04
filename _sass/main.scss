@@ -21,15 +21,15 @@ body, html {
 
 body{
     font-family: 'Raleway', serif;
-    font-size: 1.7vw;
+    font-size: calc(10pt+1vw);
     background: linear-gradient(30deg,
 				$color-yellow-light-4,
 				$color-yellow-light-1,
 				$color-yellow-light-4);
     color: black;
-    @media screen and (max-width: 700px) {
-	font-size: 1.75vw;
-    }
+    // @media screen and (max-width: 700px) {
+    // 	font-size: 1.75vw;
+    // }
 }
 
 
@@ -65,15 +65,15 @@ header {
 	}
 
 	p {
-	    width: 25%;
+	    width: 30%;
 	    text-align: center;
-	    font-size: 2vw;
+	    font-size: 1.5em;
 	}
 
-	@media screen and (max-width: 700px) {
+	@media screen and (max-width: 800px) {
 	    p {
 		width: 35%;
-		font-size: 3vw;
+		font-size: 1em;
 	    }
 	    img {
 		width: 25%;
@@ -85,6 +85,7 @@ header {
 
     #headerpage {
 	margin-bottom: 2em;
+	position: relative;
 
 	a {
 	    width: 10%;
@@ -107,39 +108,30 @@ header {
 	    }
 	}
 
-	nav {
+	nav.bigviewport {
 	    margin-top: 1em;
 
 	    @media screen and (max-width: 780px) {
 		display: none;
 	    }
 
-
 	    a {
 		display: inline-block;
 		width: 7em;
 		text-align: center;
 		line-height: 1.5em;
+		margin-right: .2em;
+		padding-left: .2em;
+		padding-right: .2em;
 		padding-bottom: .1em;
-
-		margin-right: .5em;
-		padding-left: .5em;
-		padding-right: .5em;
-
-		@media screen and (max-width: 800px) {
-		    margin-right: .2em;
-		    padding-left: .2em;
-		    padding-right: .2em;
-		}
-
 		border-radius: 2em;
-		//border: 1px solid $color-yellow-1;
 		text-decoration: none;
-		color: $color-yellow-1;
+		color: $color-yellow-light-3;
 		box-shadow: 0 -1px 3px rgba($color-red-3, .5) inset, 
 			    0  1px 3px rgba($color-red-3, .5) inset;
 		font-weight: bold;
-		font-size: .8em;
+		font-size: 1.6vw;
+		text-shadow: none;
 
 	    }
 
@@ -148,6 +140,61 @@ header {
 	    }
 
 	}
+
+	nav.littleviewport {
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: space-around;
+	    align-items: flex-start;
+	    align-content: flex-start;
+	    position: absolute;
+	    right: 2%;
+	    top: 20%;
+
+	    @media screen and (min-width: 780px) {
+		display: none;
+	    }
+
+	    a.handle {
+		background: none;
+		text-align: right;
+		line-height: 1.7em;
+		min-width: 150px;
+		font-size: 3vw;
+	    }
+
+	    a.handle:hover {
+		background: none;
+	    }
+
+	    a {
+		font-size: 2.5vw;
+		display: inline-block;
+		text-shadow: none;
+		width: 15vw;
+		min-width: 150px;
+		text-align: left;
+		line-height: 1.5em;
+		padding-bottom: .2em;
+		padding-top: .2em;
+		padding-left: .3em;
+		padding-right: .4em;
+		text-decoration: none;
+		background: linear-gradient(to left,$color-red-3,mix($color-red-3, $color-red-1, $weight: 60%));
+		font-weight: bold;
+		//font-size: .8em;
+		text-shadow: none;
+		color: $color-yellow-light-3;
+	    }
+
+	    a:hover {
+		text-decoration: underline;
+		//background: rgba($color-yellow-1,.5);
+	    }
+
+	}
+
 
     }
 
@@ -252,7 +299,48 @@ footer {
 *** MAIN
 **********************/
 
+figure:before { 
+    display: block;
+    content:"";
+    position:absolute; 
+    -webkit-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+    -moz-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+    box-shadow:0 0 10px rgba($color-yellow-0,0.8);
+    top:10%;
+    bottom:10%;
+    left:0%;
+    right:0%;
+    -moz-border-radius: 10px / 200px;
+    border-radius:10px / 200px;
+    z-index: -1;
+} 
+	
+figure {
+    img {
+	width: 100%;
+    }
+    
+    margin: 1em;
+    position: relative;
+    -webkit-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+    box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
+    
+    figcaption {
+	font-size: .8em;
+	text-align: center;
+	width: 100%;
+    }
+    
+}
+
+
 main.home {
+
+    font-size: 2vw;
+    @media screen and (max-width: 700px) {
+	font-size: 3vw;
+    }
 
     padding: .5em;
 
@@ -294,55 +382,6 @@ main.home {
 	    justify-content: stretch;
 	}
 
-	font-size: 2vw;
-	@media screen and (max-width: 700px) {
-	    font-size: 3vw;
-	}
-
-	figure:before { 
-	    display: block;
-	    content:"";
-	    position:absolute; 
-	    -webkit-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
-	    -moz-box-shadow:0 0 10px rgba($color-yellow-0,0.8);
-	    box-shadow:0 0 10px rgba($color-yellow-0,0.8);
-	    top:10%;
-	    bottom:10%;
-	    left:0%;
-	    right:0%;
-	    -moz-border-radius: 10px / 200px;
-	    border-radius:10px / 200px;
-	    z-index: -100;
-	} 
-	
-	figure {
-	    width: 50vw;
-	    
-	    img {
-		width: 100%;
-	    }
-	    
-	    margin: 1em;
-	    position: relative;
-	    -webkit-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
-	    -moz-box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
-	    box-shadow:0 1px 4px rgba($color-yellow-0, 0.3), 0 0 40px rgba($color-yellow-0, 0.1) inset;
-	    //z-index: 1;
-	    
-	    background: $color-yellow-light-1;
-	    
-	    figcaption {
-		font-size: .8em;
-		text-align: center;
-		width: 100%;
-	    }
-
-	    @media screen and (max-width: 700px) {
-		width: 80%;
-		margin: auto;
-		margin-top: 1em;
-	    }
-	}
 
 	div {
 	    padding-left: 1em;
@@ -358,12 +397,23 @@ main.home {
 
 	}
 
-
+	figure {
+	    width: 50vw;
+	    background: $color-yellow-light-1;
+        
+	    @media screen and (max-width: 700px) {
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+	    }
+	}
 
     }
 
     
     section.blockcontainer {
+
+	font-size: .8em;
 
 	margin-top: 4em;
 	margin-bottom: 1em;
@@ -410,10 +460,6 @@ main.home {
 	    clear: left;
 	    margin: .5em;
 	    
-	    font-size: 1.5vw;
-	    @media screen and (max-width: 700px) {
-		font-size: 2.25vw;
-	    }
 	}
 
     }
@@ -471,9 +517,7 @@ main {
     }
 
     clear: right;
-
     padding: .5em;
-
     text-align: justify;
 
     a, a:visited {
@@ -499,10 +543,55 @@ main {
     article {
 	background: white;
 	padding: 1em;
+	z-index: -2;
+	position: relative;
+	clear: both;
+	line-height: 2em;
+
+	figure:nth-child(odd) {
+	    float: left;
+	    margin: 1em;
+	    margin-left: 0;
+	}
+
+	figure:nth-child(even) {
+	    float: right;
+	    margin: 1em;
+	    margin-right: 0;
+	}
+
+	figure {
+	    max-width: 50vw;
+	    //border: 1px solid blue;
+	    padding: 1em;
+	    background: white;
+    
+	    @media screen and (max-width: 700px) {
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+	    }
+	}
 
 	h1 {
-
+	    margin-top: 1em;
+	    margin-bottom: .5em;
 	}
+
+	p {
+	    text-indent: 2em;
+	}
+
+	blockquote {
+	    font-size: 80%;
+	    padding-left: 4em;
+	    padding-right: 4em;
+	    line-height: 1.6em;
+	    margin-top: .5em;
+	    margin-bottom: .5em;
+	    
+	}
+
     }
 
 
