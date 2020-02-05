@@ -4,10 +4,10 @@ layout: default
 ---
 
 <ul>
-{% for img in site.documents %}
+{% for d in site.documents %}
 
 <li>
-<a href="{{ img.url }}">{{ img.title }}</a>
+<a href="{{ d.url }}">{{ d.name }} {{ d.title }}</a>
 </li>
 
 {% endfor %}

@@ -72,13 +72,30 @@
       {% endif %}
       
       <article>
+
 	{{ content }}
+
+	<footer>
+	  <p>
+	    creato da {{ page.created_by }} 
+	    il {% include datetime.html date=page.created %}
+	  </p>
+	  <p>
+	    modificato {% if page.created_by != page.modified_by %}da {{ page.modified_by }}{% endif %} 
+	    il 
+	    {% if page.last_modified %}
+	    {% include datetime.html date=page.last_modified %}
+	    {% else %}
+	    {% include datetime.html date=page.date %}
+	    {% endif %}
+	  </p>
+	</footer>
+
       </article>
       
     </main>
 
     {% include footer.html %}
-
 
     <script>
       $("nav.littleviewport a").hide();
