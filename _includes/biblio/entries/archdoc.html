@@ -1,0 +1,40 @@
+{% if include.entry.archive %}
+{{ include.entry.archive }}, 
+{% endif %}
+{% if include.entry.fondo %}
+<i>{{ include.entry.fondo }}</i>, 
+{% endif %}
+
+{% if include.entry.busta %}
+ b. {{ include.entry.busta }} 
+{% endif %}
+{% if include.entry.fusta %}
+ f. {{ include.entry.fusta }} 
+{% endif %}
+{% if include.entry.registro %}
+ reg. {{ include.entry.registro }} 
+{% endif %}
+{% if include.entry.number %}
+ n. {{ include.entry.number }} 
+{% endif %}
+
+{% if include.entry.carte %}
+{% if include.entry.carte contains "-" or include.entry.carte contains "," %} 
+cc. {{ include.entry.carte }}
+{% else %}
+c. {{ include.entry.carte }}
+{% endif %}
+{% endif %}
+{% if include.entry.title %}
+«{{ include.entry.title }}», 
+{% endif %}
+{% if include.entry.address %}
+{{ include.entry.address }}, 
+{% endif %}
+{% if include.entry.month or include.entry.year %}
+{%- include biblio/format/yearmonth.html month=include.entry.month year=include.entry.year -%}
+{%- if include.entry.notedata -%}&nbsp;{{- include.entry.note -}}{%- endif -%}, 
+{% endif %}
+{% if include.entry.note %}
+ {{ include.entry.note }}
+{% endif %}

@@ -4,6 +4,10 @@
   color: green;
 }
 
+.center {
+    text-align: center;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -197,8 +201,8 @@ header {
     }
 
     
-    #headerpage:after,#headerpage:before,
-    #headerbanner:after,#headerbanner:before {
+    #headerpage::after,#headerpage::before,
+    #headerbanner::after,#headerbanner::before {
 	content:"";
 	z-index:-100;
 	position: absolute;
@@ -301,7 +305,7 @@ footer {
 *** MAIN
 **********************/
 
-figure:before { 
+figure::before { 
     position: absolute; 
     z-index: 1;
     display: block;
@@ -572,7 +576,7 @@ main {
 	    border: none;
 	    text-align: right;
 	    margin: 0;
-	    margin-top: 10em;
+	    margin-top: 1em;
 	    padding: 0;
 	    display: block;
 	    font-size: 80%;
@@ -642,6 +646,21 @@ main {
 	    margin-bottom: .5em;
 	}
 
+	hr {
+	    margin-top: 1em;
+	    margin-bottom: 1em;
+	    border: none;
+	    height: 1px;
+	    background: linear-gradient(to left,
+					rgba($color-yellow-0,0),
+					rgba($color-yellow-0,.6),
+					rgba($color-yellow-0,0));
+	}
+
+	ul {
+	    margin-left: 4em;
+	}
+
 	dl {
 	    dt {
 		color: $color-red-3;
@@ -657,6 +676,38 @@ main {
 		margin-left: 4em;
 	    }
 
+	}
+
+	section.bibliography {
+
+	    h1 {
+		border: none;
+		font-size: 100%;
+		margin-bottom: 0;
+	    }
+
+	    margin-top: 10em;
+
+	    dl {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		width: 100%;      /* set the container width*/
+		overflow: visible;
+		align-items: baseline;
+	    }
+	    dl dt {
+		flex: 0 0 20%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	    }
+	    dl dd {
+		flex:0 0 80%;
+		margin-left: auto;
+		text-align: justify;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	    }
 	}
 
     }

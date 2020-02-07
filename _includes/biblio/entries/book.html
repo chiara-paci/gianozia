@@ -1,0 +1,23 @@
+{% if include.entry.author %}
+{%- include biblio/format/author.html author=include.entry.author -%}, 
+{% endif %}
+{%- if include.entry.url -%}<a href="{{ include.entry.url }}">{%- endif -%}
+<i>{{ include.entry.title }}</i>{%- if include.entry.url -%}</a>{%- endif -%},
+{% if include.entry.editor %}
+a cura di&nbsp;{%- include biblio/format/author.html author=include.entry.editor -%}, 
+{% endif %}
+{% if include.entry.translator %}
+traduzione di&nbsp;{%- include biblio/format/author.html author=include.entry.translator -%}, 
+{% endif %}
+{% if include.entry.publisher %}
+{{ include.entry.publisher }}, 
+{% endif %}
+{% if include.entry.address %}
+{{ include.entry.address }}, 
+{% endif %}
+{% if include.entry.year %}
+{{ include.entry.year }} 
+{% endif %}
+{% if include.entry.note %}
+ {{ include.entry.note }}
+{% endif %}

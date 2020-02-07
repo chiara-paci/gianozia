@@ -1,0 +1,20 @@
+{% if include.entry.author %}
+{%- include biblio/format/author.html author=include.entry.author -%}, 
+{% endif %}
+{% if include.entry.title %}
+<a href='{{ include.entry.url }}'>{{ include.entry.title }}</a>, 
+{% else %}
+<a href='{{ include.entry.url }}'>{{ include.entry.url }}</a>, 
+{% endif %}
+{% if include.entry.organization %}
+{{ include.entry.organization }}, 
+{% endif %}
+{% if include.entry.address %}
+{{ include.entry.address }}, 
+{% endif %}
+{% if include.entry.month or include.entry.year %}
+{%- include biblio/format/yearmonth.html month=include.entry.month year=include.entry.year -%}
+{% endif %}
+{% if include.entry.visited %}
+(visitato: <time>{{ include.entry.visited }}</time>)
+{% endif %}

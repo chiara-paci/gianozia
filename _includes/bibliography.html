@@ -1,0 +1,20 @@
+{% for entry in include.entries %}
+{% if entry.type != "incollection" %}
+   {% assign template = "biblio/entries/" | append:entry.type | append:".html" %}
+{% else %}
+   {% assign template = "biblio/entries/inproceedings.html" %}
+{% endif %}
+{% if entry.howcited %}
+   {% assign howcited = entry.howcited %}
+{% else %}
+   {% if entry.type != "incollection" %}
+      {% assign citedtemplate = "biblio/cited/" | append:entry.type | append:".html" %}
+   {% else %}
+      {% assign citedtemplate = "biblio/cited/inproceedings.html" %}
+   {% endif %}
+   {% capture howcited %}{% include {{ citedtemplate }} entry=entry %}{% endcapture %}
+{% endif %}
+<dt data-order="{{ howcited }} A"><a name="{{ entry.label }}"></a>[{{ howcited }}]</dt>
+<dd data-order="{{ howcited }} B">{% include {{ template }} entry=entry %}</dd>
+{% endfor %}
+

@@ -1,0 +1,40 @@
+{% if include.entry.author %}
+{%- include biblio/format/author.html author=include.entry.author -%}, 
+{% endif %}
+
+{%- if include.entry.url -%}<a href="{{ include.entry.url }}">{%- endif -%}
+«{{ include.entry.title }}»{%- if include.entry.url -%}</a>{%- endif -%},
+
+{% if include.entry.translator %}
+traduzione di {%- include biblio/format/author.html author=include.entry.translator -%}, 
+{% endif %}
+
+{% if include.entry.journal %}
+<i>{{ include.entry.journal }}</i>, 
+{% endif %}
+
+{% if include.entry.annata %}
+annata {{ include.entry.annata }}, 
+{% endif %}
+
+{% if include.entry.volume %}
+vol. {{ include.entry.volume }}, 
+{% endif %}
+
+{% if include.entry.number %}
+n. {{ include.entry.number }}, 
+{% endif %}
+
+{% if include.entry.month or include.entry.year %}
+{%- include biblio/format/yearmonth.html month=include.entry.month year=include.entry.year -%}, 
+{% endif %}
+{% if include.entry.note %}
+ {{ include.entry.note }}
+{% endif %}
+{% if include.entry.pages %}
+{% if include.entry.pages contains "-" or include.entry.pages contains "," %} 
+pp. {{ include.entry.pages }}
+{% else %}
+p. {{ include.entry.pages }}
+{% endif %}
+{% endif %}

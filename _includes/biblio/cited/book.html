@@ -1,0 +1,7 @@
+{%- if entry.author -%}
+{%- include biblio/format/cited_author.html author=entry.author -%}
+{%- else -%}
+{%- if entry.editor -%}
+{%- include biblio/format/cited_author.html author=entry.editor -%}
+{%- endif -%}
+{%- endif -%}&nbsp;{{- entry.year -}}{{- entry.yearlabel -}}

@@ -1,0 +1,7 @@
+{%- for aut in include.author -%}
+{%- if forloop.index0 == 2 and forloop.length > 3 -%}
+et.al.{%- break -%}
+{%- else -%}
+{{- aut[1] -}}{%- if forloop.last == false -%}-{%- endif -%}
+{%- endif -%}
+{%- endfor -%}

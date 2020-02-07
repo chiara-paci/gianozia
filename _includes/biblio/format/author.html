@@ -1,0 +1,3 @@
+{%- for aut in include.author -%}
+{{ aut[0] }} {{ aut[1] }}{% if forloop.last == false %}, {% endif %}
+{%- endfor -%}

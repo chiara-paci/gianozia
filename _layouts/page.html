@@ -75,6 +75,19 @@
 
 	{{ content }}
 
+	<section class="bibliography">
+
+	  <h1>Riferimenti</h1>
+	  
+	  <dl>
+	    {% for e in page.bibliography %}
+	    {% assign bib=site.data.biblioreal[e] %}
+	    {% include bibliography.html entries=bib %}
+	    {% endfor %}
+	  </dl>
+	  
+	</section>
+
 	<footer>
 	  <p>
 	    creato da {{ page.created_by }} 
@@ -104,7 +117,76 @@
 	  event.preventDefault();
 	  $(this).siblings().toggle();
       });
+
+      {% if page.citeall != true %}
+      $("section.bibliography h1").hide();
+      $("section.bibliography dl dt").hide();
+      $("section.bibliography dl dd").hide();
+      {% endif %}
+
+      $("blockquote").each(function(){
+	  var cite=$(this).attr("cite");
+	  if (!cite) return;
+	  var cite_t=cite.split(':');
+	  if (cite_t.length<2) return;
+	  if (cite_t[0]!="bib") return;
+	  var last=$(this).children().last();
+	  var dt=$('a[name='+cite_t[1]+']').parent();
+	  var entry;
+
+	  console.log("x",dt);
+
+	  if (dt.length==0) {
+	      entry="[==NOREF==]";
+	      $(this).append(' '+entry);
+	      return
+	  }
+
+	  $("section.bibliography h1").show();
+	  dt.show();
+	  dt.siblings("dd").first().show();
+
+	  entry=dt.text();
+	  if (last.length>0)
+	      last.append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
+	  else
+	      $(this).append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
+	  
+      });
+
+      $("section.bibliography dl").each(function(){
+	  var children=$(this).children();
+	  var sort_list = Array.prototype.sort.bind(children);
+
+	  sort_list(function ( a, b ) {
+
+	      console.log(a,b);
+
+	      // Cache inner content from the first element (a) and the next sibling (b)
+	      var aText = $(a).data("order").toLowerCase();
+	      var bText = $(b).data("order").toLowerCase();
+	      
+	      // Returning -1 will place element `a` before element `b`
+	      if ( aText < bText ) {
+		  return -1;
+	      }
+
+	      // Returning 1 will do the opposite
+	      if ( aText > bText ) {
+		  return 1;
+	      }
+
+	      // Returning 0 leaves them as-is
+	      return 0;
+	  });
+
+	  $(this).append(children);
+
+      });
+
     </script>
+
+    
 
   </body>
 </html>
