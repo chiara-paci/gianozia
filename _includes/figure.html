@@ -1,6 +1,7 @@
 <figure>
   <div>
-    <img src='{{ include.fig.file | relative_url }}'/>
+    <img src='{{ include.fig.file | relative_url }}' 
+	 alt={% if include.fig/alt %}{{ include.fig.alt }}{% else %}{{ include.fig.caption }}{% endif %}/>
     <figcaption>{{ include.fig.caption }}</figcaption>
   </div>
 </figure>

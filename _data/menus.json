@@ -1,204 +1,230 @@
 {
-	"Archeologia e arte islamica": {
-		"label": "5",
-		"items": [{
-			"level": 3,
-			"type": "title",
-			"text": "Le città Omayyadi"
-		}],
-		"children": ["IncludedNavBase"]
-	},
-	"IncludedNavBase": {
-		"label": "2",
-		"items": [{
-			"level": 0,
-			"type": "title",
-			"text": "La Gianozia"
-		}, {
-			"level": 1,
-			"url": "/",
-			"type": "item",
-			"text": "Home"
-		}, {
-			"level": 1,
-			"url": "/page/HomeUnikant",
-			"type": "item",
-			"text": "Università I. Kant"
-		}, {
-			"level": 1,
-			"url": "/page/LingueGianozia",
-			"type": "item",
-			"text": "Lingue"
-		}, {
-			"level": 1,
-			"url": "/page/StoriaGianozia",
-			"type": "item",
-			"text": "Storia"
-		}, {
-			"level": 1,
-			"url": "/page/GeografiaGianozia",
-			"type": "item",
-			"text": "Geografia"
-		}, {
-			"level": 1,
-			"url": "/page/ArchiviKGBaol",
-			"type": "item",
-			"text": "Archivi KGBaol"
-		}, {
-			"level": 1,
-			"url": "http://cucina.gianoziaorientale.org",
-			"type": "item",
-			"text": "Cucina Gianoziana"
-		}, {
-			"level": 1,
-			"url": "/page/Biblioteca",
-			"type": "item",
-			"text": "Biblioteca"
-		}],
-		"children": []
-	},
-	"IncludedNavBiblio": {
-		"label": "3",
-		"items": [{
-			"level": 0,
-			"url": "/page/Racconti",
-			"type": "item",
-			"text": "Narrativa Gianoziana"
-		}, {
-			"level": 0,
-			"type": "title",
-			"text": "Biblioteca"
-		}, {
-			"level": 1,
-			"url": "/page/Biblioteca",
-			"type": "item",
-			"text": "Home"
-		}, {
-			"level": 1,
-			"url": "/page/BiblioTavoleNumeriche",
-			"type": "item",
-			"text": "Tavole Numeriche"
-		}, {
-			"level": 1,
-			"url": "/page/DSCAlgeriaSiti",
-			"type": "item",
-			"text": "Sitografia sull'Algeria"
-		}, {
-			"level": 1,
-			"url": "/page/DSCPesiMisure",
-			"type": "item",
-			"text": "Pesi e misure"
-		}, {
-			"level": 1,
-			"url": "/page/DSCOttomanaIconografia",
-			"type": "item",
-			"text": "Iconografia per la storia ottomana"
-		}, {
-			"level": 1,
-			"url": "/page/DSCArcheologiaIslam",
-			"type": "item",
-			"text": "Archeologia e arte islamica"
-		}, {
-			"level": 1,
-			"url": "/page/DSCPinguinoIJ",
-			"type": "item",
-			"text": "Alla ricerca del computer perduto"
-		}],
-		"children": ["IncludedNavBase"]
-	},
-	"IncludedNavUnikant": {
-		"label": "4",
-		"items": [ {
-			"level": 0,
-			"type": "title",
-			"text": "Dip. di Elettronica e Informatica"
-		}, {
-			"level": 1,
-			"url": "/page/DEIEmacs",
-			"type": "item",
-			"text": "Introduzione all'uso di Emacs"
-		}, {
-			"level": 1,
-			"url": "/page/DEIEmacsTutorial",
-			"type": "item",
-			"text": "Pre-tutorial di Emacs"
-		}, {
-			"level": 0,
-			"type": "title",
-			"text": "Dip. di Informatica per Non Informatici"
-		}, {
-			"level": 1,
-			"url": "/page/DiniSWLNonInformatici1",
-			"type": "item",
-			"text": "Free Software. Le quattro libertà"
-		}, {
-			"level": 1,
-			"url": "/page/DiniSWLNonInformatici2",
-			"type": "item",
-			"text": "Free Software. Uno strumento migliore"
-		}, {
-			"level": 0,
-			"type": "title",
-			"text": "Dip. di Studi Corofrastiani"
-		}, {
-			"level": 1,
-			"url": "/page/DSCCorofrastoVita",
-			"type": "item",
-			"text": "Vita di Corofrasto"
-		}, {
-			"level": 1,
-			"url": "/page/DscCorofrastoOpere",
-			"type": "item",
-			"text": "Opere di Corofrasto"
-		}, {
-			"level": 1,
-			"url": "/page/DSCRicette",
-			"type": "item",
-			"text": "Le ricette di San Corofrasto"
-		}, {
-			"level": 1,
-			"type": "title",
-			"text": "Sezione di lingue"
-		}, {
-			"level": 2,
-			"url": "/page/DSCTurco",
-			"type": "item",
-			"text": "Turco"
-		}, {
-			"level": 2,
-			"url": "/page/DSCArabo",
-			"type": "item",
-			"text": "Arabo"
-		}, {
-			"level": 1,
-			"type": "title",
-			"text": "Sezione di storia"
-		}, {
-			"level": 2,
-			"url": "/page/DSCPinguinoIJ",
-			"type": "item",
-			"text": "Il Pinguino alla ricerca del computer perduto"
-		}, {
-			"level": 2,
-			"url": "/page/DSCArcheologiaIslam",
-			"type": "item",
-			"text": "Archeologia e arte islamica"
-		}, {
-			"level": 2,
-			"url": "/page/DSCAlgeriaSiti",
-			"type": "item",
-			"text": "Sitografia sull'Algeria"
-		}, {
-			"level": 2,
-			"url": "/page/DSCPesiMisure",
-			"type": "item",
-			"text": "Pesi e misure"
-		}, {
-			"level": 2,
-			"url": "/page/DSCOttomanaIconografia",
-			"type": "item",
-			"text": "Iconografia per la storia ottomana"
-		}],
-		"children": ["IncludedNavBase"]
-	}
+    "Archeologia e arte islamica": {
+	"label": "5",
+	"items": [{
+	    "level": 3,
+	    "type": "title",
+	    "text": "Le città Omayyadi"
+	}],
+	"children": []
+    },
+
+    "Archivio": {
+	"label": "archivio",
+	"items": [
+	    {
+		"level": 0,
+		"type": "title",
+		"text": "Archivio",
+		"url": "/page/Archivio"
+	    },
+	    {
+		"level": 1,
+		"type": "title",
+		"text": "Archivio del KGBaol",
+		"url": "/page/ArchiviKGBaol"
+	    },
+	    {
+		"level": 2,
+		"type": "item",
+		"url": "/page/bulbocapillina",
+		"text": "BBCPLN39-NNPLT"
+	    }
+	    
+	]
+    },
+
+    "IncludedNavBase": {
+	"label": "2",
+	"items": [{
+	    "level": 0,
+	    "type": "title",
+	    "text": "La Gianozia"
+	}, {
+	    "level": 1,
+	    "url": "/",
+	    "type": "item",
+	    "text": "Home"
+	}, {
+	    "level": 1,
+	    "url": "/page/HomeUnikant",
+	    "type": "item",
+	    "text": "Università I. Kant"
+	}, {
+	    "level": 1,
+	    "url": "/page/LingueGianozia",
+	    "type": "item",
+	    "text": "Lingue"
+	}, {
+	    "level": 1,
+	    "url": "/page/StoriaGianozia",
+	    "type": "item",
+	    "text": "Storia"
+	}, {
+	    "level": 1,
+	    "url": "/page/GeografiaGianozia",
+	    "type": "item",
+	    "text": "Geografia"
+	}, {
+	    "level": 1,
+	    "url": "/page/ArchiviKGBaol",
+	    "type": "item",
+	    "text": "Archivi KGBaol"
+	}, {
+	    "level": 1,
+	    "url": "http://cucina.gianoziaorientale.org",
+	    "type": "item",
+	    "text": "Cucina Gianoziana"
+	}, {
+	    "level": 1,
+	    "url": "/page/Biblioteca",
+	    "type": "item",
+	    "text": "Biblioteca"
+	}],
+	"children": []
+    },
+    "IncludedNavBiblio": {
+	"label": "3",
+	"items": [{
+	    "level": 0,
+	    "url": "/page/Racconti",
+	    "type": "item",
+	    "text": "Narrativa Gianoziana"
+	}, {
+	    "level": 0,
+	    "type": "title",
+	    "text": "Biblioteca"
+	}, {
+	    "level": 1,
+	    "url": "/page/Biblioteca",
+	    "type": "item",
+	    "text": "Home"
+	}, {
+	    "level": 1,
+	    "url": "/page/BiblioTavoleNumeriche",
+	    "type": "item",
+	    "text": "Tavole Numeriche"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCAlgeriaSiti",
+	    "type": "item",
+	    "text": "Sitografia sull'Algeria"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCPesiMisure",
+	    "type": "item",
+	    "text": "Pesi e misure"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCOttomanaIconografia",
+	    "type": "item",
+	    "text": "Iconografia per la storia ottomana"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCArcheologiaIslam",
+	    "type": "item",
+	    "text": "Archeologia e arte islamica"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCPinguinoIJ",
+	    "type": "item",
+	    "text": "Alla ricerca del computer perduto"
+	}],
+	"children": ["IncludedNavBase"]
+    },
+    "IncludedNavUnikant": {
+	"label": "4",
+	"items": [ {
+	    "level": 0,
+	    "type": "title",
+	    "text": "Dip. di Elettronica e Informatica"
+	}, {
+	    "level": 1,
+	    "url": "/page/DEIEmacs",
+	    "type": "item",
+	    "text": "Introduzione all'uso di Emacs"
+	}, {
+	    "level": 1,
+	    "url": "/page/DEIEmacsTutorial",
+	    "type": "item",
+	    "text": "Pre-tutorial di Emacs"
+	}, {
+	    "level": 0,
+	    "type": "title",
+	    "text": "Dip. di Informatica per Non Informatici"
+	}, {
+	    "level": 1,
+	    "url": "/page/DiniSWLNonInformatici1",
+	    "type": "item",
+	    "text": "Free Software. Le quattro libertà"
+	}, {
+	    "level": 1,
+	    "url": "/page/DiniSWLNonInformatici2",
+	    "type": "item",
+	    "text": "Free Software. Uno strumento migliore"
+	}, {
+	    "level": 0,
+	    "type": "title",
+	    "text": "Dip. di Studi Corofrastiani"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCCorofrastoVita",
+	    "type": "item",
+	    "text": "Vita di Corofrasto"
+	}, {
+	    "level": 1,
+	    "url": "/page/DscCorofrastoOpere",
+	    "type": "item",
+	    "text": "Opere di Corofrasto"
+	}, {
+	    "level": 1,
+	    "url": "/page/DSCRicette",
+	    "type": "item",
+	    "text": "Le ricette di San Corofrasto"
+	}, {
+	    "level": 1,
+	    "type": "title",
+	    "text": "Sezione di lingue"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCTurco",
+	    "type": "item",
+	    "text": "Turco"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCArabo",
+	    "type": "item",
+	    "text": "Arabo"
+	}, {
+	    "level": 1,
+	    "type": "title",
+	    "text": "Sezione di storia"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCPinguinoIJ",
+	    "type": "item",
+	    "text": "Il Pinguino alla ricerca del computer perduto"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCArcheologiaIslam",
+	    "type": "item",
+	    "text": "Archeologia e arte islamica"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCAlgeriaSiti",
+	    "type": "item",
+	    "text": "Sitografia sull'Algeria"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCPesiMisure",
+	    "type": "item",
+	    "text": "Pesi e misure"
+	}, {
+	    "level": 2,
+	    "url": "/page/DSCOttomanaIconografia",
+	    "type": "item",
+	    "text": "Iconografia per la storia ottomana"
+	}],
+	"children": []
+    }
 }

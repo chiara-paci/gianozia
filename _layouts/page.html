@@ -18,7 +18,7 @@
 	    <a href='{{ "/page/StoriaGianozia" | relative_url }}'>Storia</a>
 	    <a href='{{ "/page/GeografiaGianozia" | relative_url }}'>Geografia</a>
 	    <a href='{{ "/page/LingueGianozia" | relative_url }}'>Lingue</a>
-	    <a href='{{ "/page/ArchiviKGBaol" | relative_url }}'>Archivio</a>
+	    <a href='{{ "/page/Archivio" | relative_url }}'>Archivio</a>
 	    <a href='{{ "/page/Biblioteca" | relative_url }}'>Biblioteca</a>
 	    <a href='{{ "/page/Cucina" | relative_url }}'>Cucina</a>
 	  </nav>
@@ -40,11 +40,33 @@
 
     <main>
 
-      <h1 class="page">{{ page.title }}</h1>
+      <h1 class="page">
+	{% if page.protected %}
+	<a href="{{ "/page/License" | relative_url }}" alt="ciao">
+	  <img src='{{ "/assets/brand/scutum_teoduberti_piccolo.png" | relative_url }}'/></a>
+	{% endif %}
+	{{ page.title }}
+	{% if page.protected %}
+	<a href="{{ "/page/License" | relative_url }}" alt="ciao">
+	  <img src='{{ "/assets/brand/scutum_teoduberti_piccolo.png" | relative_url }}'/></a>
+	{% endif %}
+      </h1>
+
+      <article>
 
       {% if page.scheda or page.menus or page.has_toc %}
-      <aside>
+      <aside id="pagebox">
 	
+	<span class="vismarker"/></span>
+
+	<a href='#' class="togglepagebox" data-target="aside#pagebox">
+	{% if page.logo %}
+	<img src='{{ page.logo | relative_url }}' class="logobullet"/>
+	{% else %}
+	<img src='{{ "/assets/brand/menudefault.png" | relative_url }}' class="logobullet"/>
+	{% endif %}
+	</a>
+
 	{% if page.scheda %}
 	<table>
 	  {% for p in page.scheda %}
@@ -58,20 +80,19 @@
 	{% if page.menus %}
 	<nav id="pagemenu">
 	  {% for m in page.menus %}
-	  {% assign dmenu=site.data.menus[m] %}
-	  {% for ch in dmenu.children %}
-	  {% assign menu=site.data.menus[ch] %}
-	  {% include menu.html %}
-	  {% endfor %}
-	  {% assign menu=dmenu %}
-	  {% include menu.html %}
+	    {% assign dmenu=site.data.menus[m] %}
+	    {% for ch in dmenu.children %}
+	       {% assign cmenu=site.data.menus[ch] %}
+	       {% include menu.html menu=cmenu %}
+	    {% endfor %}
+	  {% include menu.html menu=dmenu %}
 	  {% endfor %}
 	</nav>
 	{% endif %}
+
       </aside>
       {% endif %}
       
-      <article>
 
 	{{ content }}
 
@@ -102,6 +123,17 @@
 	    {% include datetime.html date=page.date %}
 	    {% endif %}
 	  </p>
+
+	  {% if page.protected %}
+	  <p>&nbsp;</p>
+	  <p>
+	    © 2003-{{ 'now' | date: "%Y" }} Chiara Paci & Gian Uberto Lauri.
+	  </p>
+	  <p>
+	    Riproduzione senza alterazioni consentita con qualsiasi mezzo a patto venga conservato questo avviso.
+	  </p>
+	  {% endif %}
+
 	</footer>
 
       </article>
@@ -181,6 +213,42 @@
 	  });
 
 	  $(this).append(children);
+
+      });
+
+      var aside_reset_css=function(target){
+	  if (target.children(".vismarker").is(":visible")) {
+	      target.css({
+		  "padding": "", 
+		  "border-radius": "",
+		  "min-height": "",
+		  "background": "",
+		  "box-shadow": ""
+	      });
+	      return
+	  };
+	  target.css({
+	      "padding": "0", 
+	      "border-radius": 0,
+	      "min-height": 0,
+	      "background": "none",
+	      "box-shadow": "none"
+	  });
+      };
+
+      aside_reset_css($("#pagebox"));
+
+      $( window ).resize(function(){
+	  aside_reset_css($("#pagebox"));
+      });
+
+      $(".togglepagebox").click(function(event){
+	  event.preventDefault();
+	  var target=$( $(this).data("target") );
+
+	  target.children().toggle();
+	  aside_reset_css(target);
+	  $(this).show();
 
       });
 

@@ -113,7 +113,7 @@ header {
 	nav.bigviewport {
 	    margin-top: 1em;
 
-	    @media screen and (max-width: 780px) {
+	    @media screen and (max-width: 860px) {
 		display: none;
 	    }
 
@@ -154,7 +154,7 @@ header {
 	    right: 2%;
 	    top: 20%;
 
-	    @media screen and (min-width: 780px) {
+	    @media screen and (min-width: 860px) {
 		display: none;
 	    }
 
@@ -491,53 +491,89 @@ main {
 
     aside {
 	float: right;
-	margin: .5em;
-	padding: .5em;
-	background: lighten($color-purple-light-1,15);
-	font-size: .8em;
+	text-align: center;
+
+	border-top-left-radius: 100% 128px;
+	border-top-right-radius: 100% 128px;
+
+	position: relative;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	font-size: 80%;
+	line-height: 1.2em;
+	z-index: 300;
+	-webkit-box-shadow:0 1px 4px rgba($color-purple-0, 0.3), 0 0 40px rgba($color-purple-0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba($color-purple-0, 0.3), 0 0 40px rgba($color-purple-0, 0.1) inset;
+	box-shadow:0 1px 4px rgba($color-purple-0, 0.3), 0 0 40px rgba($color-purple-0, 0.1) inset;
+
+	background: lighten($color-purple-light-1,60);
+
+	padding: 1em;
+	min-height: 15em;
+
+	>:not(.togglepagebox) {
+	    @media screen and (max-width: 860px) {
+		display: none;
+	    }
+	}
+
+	img.logobullet {
+	    width: 64px;
+	    margin: auto;
+	}
+
+	p {
+	    border-left: 2px solid transparent;
+	    border-right: 2px solid transparent;
+	    padding-left: 2px;
+	    padding-right: 2px;
+	}
+
+	p.level0 {
+	    margin-top: 1em;
+	    margin-bottom: 1em;
+	    text-align: center;
+	    padding-top: .2em;
+	    padding-bottom: .2em;
+	}
+
+	p.level0:first-child {
+	    margin-top: 0;
+	}
 
 	p.level1 { 
-	    margin-left: 1em;
-	}
-
-	p.level2 { 
-	    margin-left: 2em;
-	}
-
-	p.level1, p.level2 {
-	    border-left: 2px solid transparent;
-	    margin-top: 3px;
 	    padding-left: 2px;
 	}
 
-	p.level1:hover, p.level2:hover {
-	    border-left: 2px solid $color-purple-light-4;
+	p.level2 { 
+	    padding-left: calc(1em + 2px);
 	}
 
+	p.level0:hover,
+	p.level1:hover, 
+	p.level2:hover {
+	    border-left: 2px solid $color-purple-light-4;
+	    border-right: 2px solid $color-purple-light-4;
+	    background: $color-purple-light-1;
+	}
 
 	.title {
-	    background: $color-purple-light-4;
-	    color: $color-purple-light-1;
 	    font-weight: bold;
-	}
-
-	p.level0.title {
-	    margin-top: 1em;
 	}
 
 	a {
 	    font-weight: normal;
 	    width: 100%;
 	}
+
 	a:hover {
 	    text-decoration: none;
 	}
 
-	padding-bottom: 1em;
-
     }
 
-    clear: both;
     padding: .5em;
     text-align: justify;
 
@@ -566,7 +602,6 @@ main {
 	//z-index: -2;
 	padding: 1em;
 	position: relative;
-	clear: both;
 	line-height: 2em;
 
 	box-shadow: 0px 0px 2px 2px rgba($color-yellow-2, 0.6);
@@ -584,12 +619,6 @@ main {
 	    border-top: 1px solid rgba($color-yellow-0,.4);
 	    line-height: 1em;
 	    clear: both;
-	}
-
-	figure {
-	    div {
-		background: white
-	    }
 	}
 
 	figure:nth-of-type(odd) {
@@ -613,6 +642,11 @@ main {
 		margin: auto;
 		margin-top: 1em;
 	    }
+
+	    div {
+		background: white
+	    }
+
 	}
 
 	h1 {
