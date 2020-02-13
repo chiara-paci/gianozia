@@ -14,7 +14,9 @@
    {% endif %}
    {% capture howcited %}{% include {{ citedtemplate }} entry=entry %}{% endcapture %}
 {% endif %}
-<dt data-order="{{ howcited }} A"><a name="{{ entry.label }}"></a>[{{ howcited }}]</dt>
-<dd data-order="{{ howcited }} B">{% include {{ template }} entry=entry %}</dd>
+<dt data-order="{{ howcited }} A" data-mydd="#{{ entry.label }}_dd">
+  <a name="{{ entry.label }}"></a>[{{ howcited }}]</dt>
+<dd data-order="{{ howcited }} B" id="{{ entry.label }}_dd">
+  {% include {{ template }} entry=entry %}</dd>
 {% endfor %}
 

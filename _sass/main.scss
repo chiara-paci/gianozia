@@ -263,6 +263,52 @@ footer {
     align-items: center;
     align-content: center;
 
+    svg.gianozialogo {
+	width: auto;
+	height: 3em;
+
+	.gianoziaanello {
+	    fill: none;
+	    fill-opacity:1;
+	    stroke: $color-yellow-0;
+	    stroke-width:20;
+	}
+
+	.gianoziablack {
+	    fill: $color-yellow-0;
+	    fill-opacity:1;
+	    stroke:none;
+	    stroke-width:1.16646445;
+	    stroke-opacity:1;
+	}
+
+	.gianoziawhite {
+	    display:inline;
+	    fill:none;
+	    fill-opacity:1;
+	    stroke:none;
+	    stroke-width:1.16646445;
+	    stroke-opacity:1;
+	}
+
+	.gianoziared {
+	    display:inline;
+	    fill:rgba($color-yellow-0,.7);
+	    fill-opacity:1;
+	    stroke:none;
+	    enable-background:new;
+	}
+
+	.gianoziayellow {
+	    display:inline;
+	    fill:rgba($color-yellow-0,.2);
+	    fill-opacity:1;
+	    stroke:none;
+	    enable-background:new;
+	}
+
+    }
+
     section {
 
 	margin-top: .2em;
@@ -595,6 +641,59 @@ main {
 	padding: .1em;
 	text-align: center;
 	margin-bottom: .5em;
+
+
+
+	svg.gianozialogo {
+	    width: auto;
+	    height: .85em;
+	    vertical-align: baseline;
+
+	    .gianoziaanello {
+		fill: $color-red-3;
+		fill-opacity:1;
+		stroke: none;
+		stroke-width: 0;
+	    }
+
+	    .gianoziablack {
+		fill: $color-red-3;
+		fill-opacity:1;
+		stroke:none;
+		stroke-width:1.16646445;
+		stroke-opacity:1;
+	    }
+
+	    .gianoziawhite {
+		display:inline;
+		fill:none;
+		fill-opacity:1;
+		stroke:none;
+		stroke-width:1.16646445;
+		stroke-opacity:1;
+	    }
+
+	    .gianoziared {
+		display:inline;
+		fill:rgba($color-red-3,.7);
+		fill-opacity:1;
+		stroke:none;
+		enable-background:new;
+	    }
+
+	    .gianoziayellow {
+		display:inline;
+		fill:rgba($color-red-3,.2);
+		fill-opacity:1;
+		stroke:none;
+		enable-background:new;
+	    }
+
+	}
+
+
+
+
     }
 
     article {
@@ -619,6 +718,62 @@ main {
 	    border-top: 1px solid rgba($color-yellow-0,.4);
 	    line-height: 1em;
 	    clear: both;
+
+	    a {
+		color: rgba($color-yellow-0,.8);
+		text-decoration: none;
+	    }
+	    
+	    a:hover {
+		background: rgba($color-yellow-0,.1);
+		text-decoration: underline;
+	    }
+
+	    i.cc {
+		text-indent: 0;
+		padding-left: 1px;
+	    }
+
+	    svg.gfdl {
+
+		width: auto;
+		height: 1.2em;
+
+		display: inline-block;
+		vertical-align: bottom;
+
+		.gfdltext {
+		    fill: rgba($color-yellow-0,.8);
+		    stroke: none;
+		}
+		
+		.gfdlborder {
+		    fill: white; //rgba($color-yellow-0,.1); // qui
+		    stroke: rgba($color-yellow-0,.8);
+		    stroke-width:1.8;
+		    stroke-linecap:round;
+		    stroke-linejoin:round;
+		}
+
+		.gfdlribbon {
+		    fill:  $color-yellow-light-3; //#2e439b;
+		    stroke: rgba($color-yellow-0,.8);
+		    stroke-width:1.4;
+		    stroke-linecap:butt;
+		    stroke-linejoin:miter;
+		    stroke-miterlimit:4;
+		}
+
+		.gfdlspiral {
+		    fill:none;
+		    stroke: rgba($color-yellow-0,.8);
+		    stroke-width:1.4;
+		    stroke-linecap:round;
+		    stroke-linejoin:round;
+		}
+
+	    }
+
 	}
 
 	figure:nth-of-type(odd) {
@@ -678,6 +833,10 @@ main {
 	    padding-right: 4em;
 	    margin-top: .5em;
 	    margin-bottom: .5em;
+	}
+
+	blockquote.translation {
+	    font-style: italic;
 	}
 
 	hr {

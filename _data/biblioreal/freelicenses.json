@@ -8,5 +8,15 @@
 	"organization": "Free Software Foundation",
 	"visited": "7 febbraio 2020",
 	"year": "2008"
+    },
+    {
+	"type": "web",
+	"label": "ccabout",
+	"howcited": "CC:about",
+	"url": "https://creativecommons.org/about/",
+	"title": "What we do",
+	"organization": "Creative Commons",
+	"visited": "13 febbraio 2020"
     }
+
 ]

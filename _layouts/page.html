@@ -41,15 +41,9 @@
     <main>
 
       <h1 class="page">
-	{% if page.protected %}
-	<a href="{{ "/page/License" | relative_url }}" alt="ciao">
-	  <img src='{{ "/assets/brand/scutum_teoduberti_piccolo.png" | relative_url }}'/></a>
-	{% endif %}
+	{% if page.protected %}{% include gianozia-scutum.html %}{% endif %}
 	{{ page.title }}
-	{% if page.protected %}
-	<a href="{{ "/page/License" | relative_url }}" alt="ciao">
-	  <img src='{{ "/assets/brand/scutum_teoduberti_piccolo.png" | relative_url }}'/></a>
-	{% endif %}
+	{% if page.protected %}{% include gianozia-scutum.html %}{% endif %}
       </h1>
 
       <article>
@@ -124,13 +118,24 @@
 	    {% endif %}
 	  </p>
 
-	  {% if page.protected %}
 	  <p>&nbsp;</p>
+	  {% if page.protected %}
 	  <p>
-	    © 2003-{{ 'now' | date: "%Y" }} Chiara Paci & Gian Uberto Lauri.
+	    <a href="http://creativecommons.org/licenses/by-nd/4.0/deed.it">
+	      <i class="cc cc-cc"></i><i class="cc cc-by"></i><i class="cc cc-nd"></i>
+	    </a>
 	  </p>
 	  <p>
 	    Riproduzione senza alterazioni consentita con qualsiasi mezzo a patto venga conservato questo avviso.
+	  </p>
+	  {% else %}
+	  <p>
+	    <a href="http://www.gnu.org/licenses/fdl.html">
+	      {% include gnu-fdl-logo.html %}
+	    </a>
+	    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.it">
+	      <i class="cc cc-cc"></i><i class="cc cc-by"></i><i class="cc cc-sa"></i>
+	    </a>
 	  </p>
 	  {% endif %}
 
@@ -155,36 +160,6 @@
       $("section.bibliography dl dt").hide();
       $("section.bibliography dl dd").hide();
       {% endif %}
-
-      $("blockquote").each(function(){
-	  var cite=$(this).attr("cite");
-	  if (!cite) return;
-	  var cite_t=cite.split(':');
-	  if (cite_t.length<2) return;
-	  if (cite_t[0]!="bib") return;
-	  var last=$(this).children().last();
-	  var dt=$('a[name='+cite_t[1]+']').parent();
-	  var entry;
-
-	  console.log("x",dt);
-
-	  if (dt.length==0) {
-	      entry="[==NOREF==]";
-	      $(this).append(' '+entry);
-	      return
-	  }
-
-	  $("section.bibliography h1").show();
-	  dt.show();
-	  dt.siblings("dd").first().show();
-
-	  entry=dt.text();
-	  if (last.length>0)
-	      last.append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
-	  else
-	      $(this).append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
-	  
-      });
 
       $("section.bibliography dl").each(function(){
 	  var children=$(this).children();
@@ -214,6 +189,37 @@
 
 	  $(this).append(children);
 
+      });
+
+      $("blockquote").each(function(){
+	  var cite=$(this).attr("cite");
+	  if (!cite) return;
+	  var cite_t=cite.split(':');
+	  if (cite_t.length<2) return;
+	  if (cite_t[0]!="bib") return;
+	  var last=$(this).children().last();
+	  var dt=$('a[name='+cite_t[1]+']').parent();
+	  var entry;
+
+	  console.log("x",dt);
+
+	  if (dt.length==0) {
+	      entry="[==NOREF==]";
+	      $(this).append(' '+entry);
+	      return
+	  }
+
+	  $("section.bibliography h1").show();
+	  dt.show();
+	  $(dt.data("mydd")).show();
+	  //dt.siblings("dd").first().show();
+
+	  entry=dt.text();
+	  if (last.length>0)
+	      last.append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
+	  else
+	      $(this).append(' <a href="#'+cite_t[1]+'">'+entry+'</a>');
+	  
       });
 
       var aside_reset_css=function(target){

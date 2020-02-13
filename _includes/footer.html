@@ -1,10 +1,10 @@
     <footer>
       <section>
 	<section>
-	  <a  href="/info/cittadinanza.html">Cittadinanza</a>
+	  <!-- <a  href="/info/cittadinanza.html">Cittadinanza</a> -->
 	  <a href="{{ "/page/Ludoteca" | relative_url }}">Ludoteca</a>
-	  <a href="{{ "/archivio" | relative_url }}">Archivio</a>
-	  <a href="{{ "/politica_estera" | relative_url }}">Politica estera</a>
+	  <a href="{{ "/page/Archivio" | relative_url }}">Archivio</a>
+	  <a href="{{ "/page/politica_estera" | relative_url }}">Politica estera</a>
 	</section>
 	
 	{% for section in site.data.home_sections %}
@@ -24,8 +24,10 @@
 
       </section>
 
+      <section>	{% include gianozia-logo.html %}</section>
+
       <section>
-	<p>© 2003-2021 Gianozia Orientale</p>
+	<p>© 2003-{{ 'now' | date:"%Y" }} Gianozia Orientale</p>
       </section>
 
     </footer>
