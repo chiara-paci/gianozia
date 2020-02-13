@@ -1,8 +1,9 @@
 <figure>
   <div>
     <img src='{{ include.fig.file | relative_url }}' 
-	 {% if include.width %} width="{{ include.width }}"{% endif %}
+	 {% if include.width %} style="width:{{ include.width }};"{% endif %}
 	 alt={% if include.fig.alt %}'{{ include.fig.alt }}'{% else %}'{{ include.fig.caption }}'{% endif %}/>
-    <figcaption>{{ include.fig.caption }}</figcaption>
+    <figcaption {% if include.width %} style="width:{{ include.width }};"{% endif %}>
+      {{ include.fig.caption }}</figcaption>
   </div>
 </figure>
