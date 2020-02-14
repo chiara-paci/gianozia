@@ -97,8 +97,24 @@
 
 	{{ content }}
 
-	<section class="bibliography">
+        {% if page.attachments %}
 
+	<section class="attachments onfoot">
+	  <h1 class="nonumber">Materiali</h1>
+
+	  <ul>
+	    {% for f in page.attachments %}
+	    <li><a href='{{ f.file | relative_url }}'>{{ f.title }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</section>
+	  {% endif %}
+
+	
+
+	<section class="bibliography onfoot">
+
+	  
 	  <h1 class="nonumber">Riferimenti</h1>
 	  
 	  <dl>

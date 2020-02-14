@@ -7,41 +7,46 @@ permalink: /page/DEIHowToSoekris
 has_toc: false
 created_by: chiara
 modified_by: chiara
-created: 2014-02-07 14:45:54.128236+01
-last_modified: 2014-05-08 09:18:44.301835+02
+created: 2009-05-27 15:34:43
+menus: [IncludedNavUnikant]
+logo: /assets/brand/menuunikant.png
 ---
-<p><h1>Ingredienti</h1><ol>
+
+<h1>Ingredienti</h1>
+<ol>
 <li>Soekris 4801</li>
 <li>CompactFlash tipo I da 1 GB</li>
 <li>Un PC di supporto con linux e una porta seriale</li>
 </ol>
 Alla Soekris ci si collega via seriale, quindi per l'hardware serve un null-modem. Ovviamente il null-modem dovrà avere due femmine da 9 pin: siccome in genere non si trova, questo comporta anche ulteriori cavi/convertitori.</p>
-<p><h1>Preparazione del sistema di supporto</h1>
+
+<h1>Preparazione del sistema di supporto</h1>
 <h2>Collegamento</h2>
 Dopo vani tentativi con minicom, sono passata a rtty:</p>
-<p><pre></p>
-<p># apt-get install remote-tty
+<pre>
+# apt-get install remote-tty
 # ttysrv -s /root/ttysrvsock -t /dev/ttyS0 -b 19200 &
-# remote-tty /root/ttysrvsock  </pre></p>
+# remote-tty /root/ttysrvsock  </pre>
 <p>A questo punto la Soekris va accesa e fa il boot tranquillamente.</p>
-<p>Siccome vorrebbe partire da disco, bisogna dare ctrl-p per fermarla.</p>
-<p><h2>DHCP</h2>
-Nel PC di supporto:</p>
-<p><pre></p>
-<p># apt-get install dhcp3-server </pre></p>
+<p>Siccome vorrebbe partire da disco, bisogna dare <tt>ctrl-p</tt> per fermarla.</p>
+<h2>DHCP</h2>
+<p>Nel PC di supporto:</p>
+<pre>
+# apt-get install dhcp3-server </pre>
+
 <p>Nella console della Soekris:</p>
-<p><pre></p>
-<p>> boot f0  </pre></p>
+<pre>
+> boot f0  </pre>
+
 <p>La cosa non funzionerà, tuttavia questo ci darà il MAC address della Soekris, che va messo nel file /etc/dhcp3/dhcpd.conf:</p>
-<p><pre></p>
-<p>option domain-name "<domain>";
+<pre>
+option domain-name "<domain>";
 option domain-name-servers <dns1>, <dns2>;
 option routers <gw>;
 subnet <subnet> netmask <netmask> {
 }
 host <name_soekris> {
-<blockquote>hardware ethernet <eth_soekris>;</blockquote>
-<blockquote>fixed-address <ip_soekris>;</blockquote>
-}  </pre></p>
-<p>
-</p>
+    hardware ethernet <eth_soekris>;
+    fixed-address <ip_soekris>;
+}  </pre>
+

@@ -135,35 +135,65 @@
 
     "IncludedNavUnikant": {
 	"label": "4",
-	"items": [ {
-	    "level": 0,
-	    "type": "title",
-	    "text": "Dip. di Elettronica e Informatica"
-	}, {
-	    "level": 1,
-	    "url": "/page/DEIEmacs",
-	    "type": "item",
-	    "text": "Introduzione all'uso di Emacs"
-	}, {
-	    "level": 1,
-	    "url": "/page/DEIEmacsTutorial",
-	    "type": "item",
-	    "text": "Pre-tutorial di Emacs"
-	}, {
-	    "level": 0,
-	    "type": "title",
-	    "text": "Dip. di Informatica per Non Informatici"
-	}, {
-	    "level": 1,
-	    "url": "/page/DiniSWLNonInformatici1",
-	    "type": "item",
-	    "text": "Free Software. Le quattro libertà"
-	}, {
-	    "level": 1,
-	    "url": "/page/DiniSWLNonInformatici2",
-	    "type": "item",
-	    "text": "Free Software. Uno strumento migliore"
-	}, {
+	"items": [ 
+	    {
+		"level": 0,
+		"type": "title",
+		"text": "Dip. di Elettronica e Informatica"
+	    }, 
+	    {
+		"level": 1,
+		"type": "title",
+		"text": "Studi emacsiti"
+	    }, 
+	    {
+		"level": 2,
+		"url": "/page/DEIEmacs",
+		"type": "item",
+		"text": "Introduzione all'uso di Emacs"
+	    }, 
+	    {
+		"level": 2,
+		"url": "/page/DEIEmacsTutorial",
+		"type": "item",
+		"text": "Pre-tutorial di Emacs"
+	    }, 
+	    {
+		"level": 1,
+		"url": "/page/DEIHoax",
+		"type": "item",
+		"text": "Gli Hoax"
+	    }, 
+	    {
+		"level": 1,
+		"url": "/page/DEIHowToSoekris",
+		"type": "item",
+		"text": "Installazione di una Soekris"
+	    }, 
+	    {
+		"level": 0,
+		"type": "title",
+		"text": "Dip. di Informatica per Non Informatici"
+	    }, 
+	    {
+		"level": 1,
+		"url": "/page/DiniSWLibero",
+		"type": "item",
+		"text": "Che cos'è il software libero?"
+	    }, 
+	    {
+		"level": 1,
+		"url": "/page/DiniSWLNonInformatici1",
+		"type": "item",
+		"text": "Software libero e non informatici: le quattro libertà"
+	    }, 
+	    {
+		"level": 1,
+		"url": "/page/DiniSWLNonInformatici2",
+		"type": "item",
+		"text": "Software Libero e non informatici: uno strumento migliore"
+	    }, 
+	    {
 	    "level": 0,
 	    "type": "title",
 	    "text": "Dip. di Studi Corofrastiani"

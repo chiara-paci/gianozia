@@ -149,7 +149,7 @@ M-x da-pinco-a-panco </pre>
 <pre>
 (da-pinco-a-panco "nomefile") </pre>
 
-<p>Bene, ora abbiamo una funzione che fa il nostro lavoro per UN SOLO FILE. A che ci serve ? Beh, Emacs è grande e grosso, ed è anche un server. :)</p>
+<p>Bene, ora abbiamo una funzione che fa il nostro lavoro per UN SOLO FILE. A che ci serve ? Beh, Emacs è grande e grosso, ed è anche un server. :blush:</p>
 <p>C'è un programma chiamato emacsclient (per versioni di Emacs anteriori alla 22 occorre procurarsi gnuclient e gnudoit) che serve ad usare Emacs come server di editing, carica temporaneamente un file, ve lo fa editare e poi quando date il comando <tt>C-x #</tt> (ovvero <tt>server-edit</tt>) lo fa sparire dopo avervi eventualmente chiesto di salvare le modifiche.</p>
 <p>E che c'entra ?</p>
 <p>Il programma ha una opzione che si chiama --eval e che richiede a Emacs di interpretare una espressione LISP (oppure lo fa il programma gnudoit). Date il comando <tt>M-x server-start</tt> (<tt>gnuserver-start</tt> con gnuclient) e provate a dare da shell</p>

@@ -1,0 +1,14 @@
+[
+    {
+	"type": "book",
+	"label": "kernighan-pike-1985",
+	"author": [ 
+	    ["Brian W.", "Kernighan"], 
+	    ["Robert", "Pike"]
+	],
+	"address": "Bologna",
+	"title": "UNIX",
+	"publisher": "Zanichelli", 
+	"year": "1985"
+    }
+]
