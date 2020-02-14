@@ -3,7 +3,7 @@
     <img src='{{ include.fig.file | relative_url }}' 
 	 {% if include.width %} style="width:{{ include.width }};"{% endif %}
 	 alt={% if include.fig.alt %}'{{ include.fig.alt }}'{% else %}'{{ include.fig.caption }}'{% endif %}/>
-    <figcaption {% if include.width %} style="width:{{ include.width }};"{% endif %}>
+    <figcaption>
       {{ include.fig.caption }}</figcaption>
   </div>
 </figure>

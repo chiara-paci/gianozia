@@ -1,7 +1,11 @@
 baseurl: ""
 url: http://127.0.0.1:4000
+gems: ["jemoji"]
 
 exclude: [elaborazione,old,nonmigrate]
+
+plugins:
+  - jemoji
 
 collections:
   documents:

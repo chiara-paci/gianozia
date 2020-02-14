@@ -1,6 +1,10 @@
 repository: chiara-paci/gianozia
 baseurl: gianozia
 url: https://chiara-paci.github.io
+gems: ["jemoji"]
+
+plugins:
+  - jemoji
 
 exclude: [elaborazione,old,nonmigrate]
 

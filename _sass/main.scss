@@ -8,6 +8,77 @@
     text-align: center;
 }
 
+.large {
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+.clearfix::after { 
+   content: ""; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+pre, tt {
+    font-family: 'Source Code Pro', monospace;
+}
+
+svg.gianozialogo {
+    .gianoziaali {
+	opacity:1;
+	fill-opacity:1;
+	fill-rule:nonzero;
+	stroke:none;
+	stroke-width:3.77952766;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:4;
+	stroke-dasharray:none;
+	stroke-dashoffset:0;
+	stroke-opacity:1;
+	paint-order:normal;
+    }
+
+    .gianoziaanello {
+	fill: none;
+	fill-opacity:1;
+	stroke-width:20;
+    }
+
+    .gianoziablack {
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:1.16646445;
+	stroke-opacity:1;
+    }
+
+    .gianoziawhite {
+	display:inline;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:1.16646445;
+	stroke-opacity:1;
+    }
+
+    .gianoziared {
+	display:inline;
+	fill-opacity:1;
+	stroke:none;
+	enable-background:new;
+    }
+
+    .gianoziayellow {
+	display:inline;
+	fill-opacity:1;
+	stroke:none;
+	enable-background:new;
+    }
+
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -21,7 +92,6 @@ body, html {
     padding: 0;
     //border: 1px solid blue;
 }
-
 
 body{
     font-family: 'Raleway', serif;
@@ -237,6 +307,7 @@ header {
  *****************************************/
 
 footer {
+    clear: both;
     min-height: 3em;
     margin-top: 2em;
     color: $color-yellow-0;
@@ -268,43 +339,19 @@ footer {
 	height: 3em;
 
 	.gianoziaanello {
-	    fill: none;
-	    fill-opacity:1;
 	    stroke: $color-yellow-0;
-	    stroke-width:20;
 	}
 
 	.gianoziablack {
 	    fill: $color-yellow-0;
-	    fill-opacity:1;
-	    stroke:none;
-	    stroke-width:1.16646445;
-	    stroke-opacity:1;
-	}
-
-	.gianoziawhite {
-	    display:inline;
-	    fill:none;
-	    fill-opacity:1;
-	    stroke:none;
-	    stroke-width:1.16646445;
-	    stroke-opacity:1;
 	}
 
 	.gianoziared {
-	    display:inline;
 	    fill:rgba($color-yellow-0,.7);
-	    fill-opacity:1;
-	    stroke:none;
-	    enable-background:new;
 	}
 
 	.gianoziayellow {
-	    display:inline;
 	    fill:rgba($color-yellow-0,.2);
-	    fill-opacity:1;
-	    stroke:none;
-	    enable-background:new;
 	}
 
     }
@@ -383,7 +430,7 @@ figure {
 	margin: auto;
 	//width: 100%;
 	text-align: center;
-	
+
 	img {
 	    position: relative;
 	    width: 100%;
@@ -544,6 +591,9 @@ main.home {
 
 main {
 
+    padding: .5em;
+    text-align: justify;
+
     aside {
 	float: right;
 	text-align: center;
@@ -568,6 +618,8 @@ main {
 	padding: 1em;
 	min-height: 15em;
 
+	color: $color-purple-light-4;
+
 	>:not(.togglepagebox) {
 	    @media screen and (max-width: 860px) {
 		display: none;
@@ -582,36 +634,29 @@ main {
 	p {
 	    border-left: 2px solid transparent;
 	    border-right: 2px solid transparent;
+	    border-bottom: 1px solid  rgba($color-purple-light-4,.2);
 	    padding-left: 2px;
 	    padding-right: 2px;
+	    text-align: left;
+	    text-indent: 0 !important;
 	}
 
 	p.level0 {
-	    margin-top: 1em;
-	    margin-bottom: 1em;
 	    text-align: center;
-	    padding-top: .2em;
-	    padding-bottom: .2em;
-	}
-
-	p.level0:first-child {
-	    margin-top: 0;
+	    padding-top: 1em;
+	    padding-bottom: 1em;
 	}
 
 	p.level1 { 
 	    padding-left: 2px;
 	}
 
-	p.level2 { 
-	    padding-left: calc(1em + 2px);
+	p.level1.title {
+	    padding-top: .5em;
 	}
 
-	p.level0:hover,
-	p.level1:hover, 
-	p.level2:hover {
-	    border-left: 2px solid $color-purple-light-4;
-	    border-right: 2px solid $color-purple-light-4;
-	    background: $color-purple-light-1;
+	p.level2 { 
+	    padding-left: calc(1em + 2px);
 	}
 
 	.title {
@@ -619,18 +664,51 @@ main {
 	}
 
 	a {
+	    color: $color-purple-light-4;
 	    font-weight: normal;
 	    width: 100%;
+	    p.level0:hover,
+	    p.level1:hover, 
+	    p.level2:hover {
+		border-left: 2px solid $color-purple-light-4;
+		border-right: 2px solid $color-purple-light-4;
+		//background: $color-purple-light-1;
+	    }
 	}
 
 	a:hover {
 	    text-decoration: none;
 	}
 
-    }
+	svg.gianozialogo {
+	    width: auto;
+	    height: 1em;
+	    margin-top: 1em;
 
-    padding: .5em;
-    text-align: justify;
+	    .gianoziaali {
+		fill: rgba($color-purple-0,.4);
+	    }
+
+	    .gianoziaanello {
+		stroke: $color-purple-0;
+	    }
+
+	    .gianoziablack {
+		fill: rgba($color-purple-0,.7);
+	    }
+
+	    .gianoziared {
+		fill:rgba($color-purple-0,.5);
+	    }
+
+	    .gianoziayellow {
+		fill:rgba($color-purple-0,.1);
+	    }
+
+	}
+
+
+    }
 
     a, a:visited {
 	color: $color-purple-0;
@@ -655,47 +733,23 @@ main {
 
 	svg.gianozialogo {
 	    width: auto;
-	    height: .85em;
+	    height: .9em;
 	    vertical-align: baseline;
 
 	    .gianoziaanello {
-		fill: $color-red-3;
-		fill-opacity:1;
-		stroke: none;
-		stroke-width: 0;
+		fill: rgba($color-red-3,.5);
 	    }
 
 	    .gianoziablack {
 		fill: $color-red-3;
-		fill-opacity:1;
-		stroke:none;
-		stroke-width:1.16646445;
-		stroke-opacity:1;
-	    }
-
-	    .gianoziawhite {
-		display:inline;
-		fill:none;
-		fill-opacity:1;
-		stroke:none;
-		stroke-width:1.16646445;
-		stroke-opacity:1;
 	    }
 
 	    .gianoziared {
-		display:inline;
 		fill:rgba($color-red-3,.7);
-		fill-opacity:1;
-		stroke:none;
-		enable-background:new;
 	    }
 
 	    .gianoziayellow {
-		display:inline;
 		fill:rgba($color-red-3,.2);
-		fill-opacity:1;
-		stroke:none;
-		enable-background:new;
 	    }
 
 	}
@@ -822,7 +876,19 @@ main {
 	    border-top: 1px solid $color-red-3;
 	    padding-bottom: .3em;
 	    padding-top: .3em;
-	    clear: both;
+	}
+
+	pre {
+	    background: $color-purple-4;
+	    color: white;
+	    padding: 1em;
+	    line-height: 1.2em;
+	    box-shadow: 0 0 5px 3px black inset;
+	    border-radius: 5px;
+	    margin-left: 2em;
+	    margin-right: 2em;
+	    margin-top: .5em;
+	    margin-bottom: .5em;
 	}
 
 	p {
@@ -835,13 +901,23 @@ main {
 
 	blockquote {
 	    overflow: hidden;
-	    display: block;
+	    //display: block;
 	    font-size: 80%;
 	    line-height: 1.6em;
+
 	    padding-left: 4em;
 	    padding-right: 4em;
 	    margin-top: .5em;
 	    margin-bottom: .5em;
+
+
+	    //border: 1px solid red;
+
+	    position: relative;
+
+	    margin-top: .5em;
+	    margin-bottom: .5em;
+
 	}
 
 	blockquote.translation {
