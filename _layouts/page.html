@@ -82,11 +82,12 @@
 	<nav id="pagemenu">
 	  {% for m in page.menus %}
 	    {% assign dmenu=site.data.menus[m] %}
+	    {% include menu.html menu=dmenu %}
 	    {% for ch in dmenu.children %}
+	       {% include gianozia-sep.html %}
 	       {% assign cmenu=site.data.menus[ch] %}
 	       {% include menu.html menu=cmenu %}
 	    {% endfor %}
-	  {% include menu.html menu=dmenu %}
 	  {% endfor %}
 	</nav>
 	{% endif %}

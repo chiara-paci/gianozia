@@ -1,5 +1,5 @@
 {% for item in include.menu.items %}
-{% if item.type == "sep" %}<hr/>
+{% if item.type == "sep" %}{% include gianozia-sep.html %}
 {% else %}
 {% if item.url %}<a href="{{ item.url | relative_url }}">{% endif %}
   <p class="level{{ item.level }} {{ item.type }}">

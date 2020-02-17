@@ -96,9 +96,39 @@
 	"children": ["IncludedNavBase"]
     },
 
+    "Corofrasto": {
+	"items": [
+	    {
+		"level": 1,
+		"url": "/page/DSCCorofrastoVita",
+		"type": "item",
+		"text": "Vita di Corofrasto"
+	    },
+	    {
+		"level": 1,
+		"url": "/page/DscCorofrastoOpere",
+		"type": "item",
+		"text": "Opere di Corofrasto"
+	    },
+	    {
+		"level": 1,
+		"url": "/page/DSCRicette",
+		"type": "item",
+		"text": "Le ricette di San Corofrasto"
+	    }
+	],
+	"children": ["IncludedNavUnikant"]
+    },
+
     "IncludedNavUnikant": {
 	"label": "4",
 	"items": [ 
+	    {
+		"level": 0,
+		"type": "title",
+		"text": "Università Immanuel Kant",
+		"url": "/page/HomeUnikant"
+	    }, 
 	    {
 		"level": 0,
 		"type": "title",
