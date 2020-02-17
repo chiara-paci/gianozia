@@ -1,0 +1,154 @@
+[
+    {
+	"type": "book",
+	"label": "marianae1599",
+	"author": [ 
+	    [ "Ioannis", "Marianae"]
+	],  
+	"url": "http://books.google.it/books?id=gsXD6DbN1I4C",
+	"title": "De ponderibus et mensuris",
+	"publisher": " Thomam Gusmanium",
+	"address": "Toledo",
+	"year": "1599"
+    },
+    {
+	"type": "book",
+	"label": "mylerus1668",
+	"author": [ 
+	    [ "Nicolaus", "Mylerus"]
+	] ,
+	"url": "http://books.google.it/books?id=Y1EUAAAAQAAJ",
+	"title": "Metrologia, hoc est de jure statuendi de mensuris, ponderibus et moletrinis",
+	"publisher": "Johan-Henrici Resii",
+	"address": "Tubingen",
+	"year": "1668"
+    },
+    {
+	"type": "book",
+	"label": "eisenschmid1737",
+	"author": [ 
+	    [ "Jo. Gaspard", "Eisenschmid"]
+	]  ,
+	"url": "http://books.google.it/books?id=zVIVAAAAQAAJ ",
+	"title": "De ponderibus et mensuris veterum romanorum, graecorum, hebraerum, nec non de valore pecuniae veteris",
+	"publisher": "Henricus Leonardus Stein",
+	"address": "Strasbourg",
+	"year": "1737"
+
+    },
+    {
+	"type": "book",
+	"label": "oberti1667",
+	"author": [ 
+	    [ "Finetto", "Oberti"]
+	]  ,
+	"url": "http://books.google.it/books?id=Uq8BAAAAYAAJ",
+	"title": "Aggivstamento vniversale, overo Corrispondenza, che hanno i pesi, e le misure di tutte le cose l'vna con l'altra le citta' d'Evropa, Asia, & Africa",
+	"publisher": "Scipion Banca",
+	"address": "Venezia",
+	"year": "1667" 
+
+
+    },
+    {
+	"type": "book",
+	"label": "megliorati1703",
+	"author": [ 
+	    [ "Antonio", "Megliorati"]
+	]  ,
+	"url": "http://books.google.it/books?id=wPU4AAAAMAAJ",
+	"title": "Novissima corrispondenza delli pesi, e misure di Venezia con li pesi, & misure delle città, e terre, che negoziano con essa: Di Soria, Barbarìa, Turchìa, Germania, Francia, Spagna, e d'Italia",
+	"publisher": "Pietro D'Orlandi",
+	"address": "Venezia",
+	"year": "1703"
+    },
+    {
+	"type": "book",
+	"label": "triulzi1766",
+	"author": [ 
+	    [ "Antonio Maria", "Triulzi"]
+	]  ,
+	"url": "http://books.google.it/books?id=88I2AAAAMAAJ",
+	"title": "Bilancio de pesi, e misure di tutte le piazze mercantili dell'Europa in questa seconda edizione novamente riccorretto. Con una nova aggionta contenente diversissime notizie necessarie, ed utilissime a chiunque condizione di persone, ispecialmente alla negoziazione, ed al commodo universale del commercio",
+	"publisher": "Alvise Valvasense",
+	"address": "Venezia",
+	"year": "1766"
+    },
+    {
+	"type": "book",
+	"label": "detraytorens1766a",
+	"author": [ 
+	    [ "", "De Traytorens"]
+	]  ,
+	"url": "http://books.google.it/books?id=pPQ4AAAAMAAJ",
+	"title": "Esposizione copiosissima, e sicura di tutte le misure, e pesi comuni in Europa, in Affrica, in Asia, e in America: con il loro ragguaglio alle misure, e pesi più usuali, e conosciuti, per facilitare il commercio, e per uso di coloro che devono calcolarli. Tomo I",
+	"publisher": "Agostino Pizzorno",
+	"address": "Pisa",
+	"year": "1766",
+	"yearlabel": "a"
+    },
+    {
+	"type": "book",
+	"label": "detraytorens1766b",
+	"author": [ 
+	    [ "", "De Traytorens"]
+	]  ,
+	"url": "http://books.google.it/books?id=0_Q4AAAAMAAJ",
+	"title": "Esposizione copiosissima, e sicura di tutte le misure, e pesi comuni in Europa, in Affrica, in Asia, e in America: con il loro ragguaglio alle misure, e pesi più usuali, e conosciuti, per facilitare il commercio, e per uso di coloro che devono calcolarli. Tomo II",
+	"publisher": "Agostino Pizzorno",
+	"address": "Pisa",
+	"year": "1766",
+	"yearlabel": "b"
+    },
+    {
+	"type": "book",
+	"label": "tillet1769",
+	"author": [
+	    [ "Mathieu", "Tillet" ], 
+	    [ "Jacopo", "Fallani" ], 
+	    [ "Alexander Henry", "Davis" ]  
+	],
+	"url": "http://books.google.it/books?id=f2AOAAAAMAAJ",
+	"title": "Saggio sul rapporto dei pesi stranieri con il marco di Francia",
+	"publisher": "Gaetano Cambiagi",
+	"address": "Firenze",
+	"year": "1769"
+    },
+    {
+	"type": "book",
+	"label": "kelly1811a",
+	"author": [ 
+	    [ "Patrick", "Kelly"]
+	]  ,
+	"url": "http://books.google.it/books?id=0EEuAAAAYAAJ",
+	"title": "The Universal Cambist, and Commercial Instructor: Being a General Treaty on Exchange, Including the Monies, Coins, Weights, and Measures of All Trading Nations and Colonies with with an Account of Their Banks and Paper Currencies. Vol. I",
+	"address": "London",
+	"year": "1811",
+	"yearlabel": "a"
+    },
+    {
+	"type": "book",
+	"label": "kelly1811b",
+	"author": [ 
+	    [ "Patrick", "Kelly"]
+	]  ,
+	"url": "http://books.google.it/books?id=6EQuAAAAYAAJ ",
+	"title": "The Universal Cambist, and Commercial Instructor: Being a General Treaty on Exchange, Including the Monies, Coins, Weights, and Measures of All Trading Nations and Colonies with with an Account of Their Banks and Paper Currencies. Vol. II",
+	"address": "London",
+	"year": "1811",
+	"yearlabel": "b"
+    },
+    {
+	"type": "book",
+	"label": "lando1645",
+	"author": [
+	    [ "Giovanni Giacomo", "Lando" ]
+	],
+	"title": "Arithmetica mercantile", 
+	"publisher": "Heredi dell'Umberti", 
+	"address": "Venezia",
+	"year": "1645",
+	"url": "http://books.google.it/books?id=hAg3AAAAMAAJ"
+    }
+
+]

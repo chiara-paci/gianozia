@@ -1,0 +1,9 @@
+{% assign entries = include.bibliodb | where:"label",include.label %}
+{% for entry in entries %}
+{% if entry.type != "incollection" %}
+   {% assign template = "biblio/entries/" | append:entry.type | append:".html" %}
+{% else %}
+   {% assign template = "biblio/entries/inproceedings.html" %}
+{% endif %}
+{% include {{ template }} entry=entry %}
+{% endfor %}

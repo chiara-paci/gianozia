@@ -659,6 +659,10 @@ main {
 	    padding-left: calc(1em + 2px);
 	}
 
+	p.level3 { 
+	    padding-left: calc(2em + 2px);
+	}
+
 	.title {
 	    font-weight: bold;
 	}
@@ -669,6 +673,7 @@ main {
 	    width: 100%;
 	    p.level0:hover,
 	    p.level1:hover, 
+	    p.level3:hover, 
 	    p.level2:hover {
 		border-left: 2px solid $color-purple-light-4;
 		border-right: 2px solid $color-purple-light-4;
@@ -847,13 +852,13 @@ main {
 
 	figure:nth-of-type(odd) {
 	    float: left;
-	    margin: 1em;
+	    margin: 2em;
 	    margin-left: 0;
 	}
 
 	figure:nth-of-type(even) {
 	    float: right;
-	    margin: 1em;
+	    margin: 2em;
 	    margin-right: 0;
 	}
 

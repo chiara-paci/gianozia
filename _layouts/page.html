@@ -102,9 +102,10 @@
 	<section class="attachments onfoot">
 	  <h1 class="nonumber">Materiali</h1>
 
-	  <ul>
+	  <ul class="fa-ul">
 	    {% for f in page.attachments %}
-	    <li><a href='{{ f.file | relative_url }}'>{{ f.title }}</a></li>
+	    <li><span class="fa-li"><i class="fas fa-paperclip"></i></span>
+	      <a href='{{ f.file | relative_url }}'>{{ f.title }}</a></li>
 	    {% endfor %}
 	  </ul>
 	</section>
